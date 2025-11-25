@@ -1,0 +1,195 @@
+version: '3.8'
+
+services:
+  # PostgreSQL database for Kong
+  kong-database:
+    image: postgres:13
+    container_name: kong-database
+    environment:
+      POSTGRES_DB: kong
+      POSTGRES_USER: kong
+      POSTGRES_PASSWORD: kongpass
+    ports:
+      - "5432:5432"
+    volumes:
+      - kong_data:/var/lib/postgresql/data
+    networks:
+      - offerzone-network
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "kong"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Kong Database Migration
+  kong-migration:
+    image: kong:3.4
+    container_name: kong-migration
+    command: kong migrations bootstrap
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-database
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: kongpass
+      KONG_PG_DATABASE: kong
+    depends_on:
+      kong-database:
+        condition: service_healthy
+    networks:
+      - offerzone-network
+    restart: on-failure
+
+  # Kong Gateway
+  kong:
+    image: kong:3.4
+    container_name: kong-gateway
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-database
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: kongpass
+      KONG_PG_DATABASE: kong
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001
+      KONG_PROXY_LISTEN: 0.0.0.0:8000
+    ports:
+      - "9000:8000"  # Kong Proxy (API Gateway entry point)
+      - "9001:8001"  # Kong Admin API
+    depends_on:
+      kong-database:
+        condition: service_healthy
+      kong-migration:
+        condition: service_completed_successfully
+    networks:
+      - offerzone-network
+    healthcheck:
+      test: ["CMD", "kong", "health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+  # MongoDB for all microservices
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - offerzone-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # User Service
+  user-service:
+    build:
+      context: ./User
+      dockerfile: Dockerfile
+    container_name: user-service
+    environment:
+      PORT: 8000
+      MONGODB_URI: mongodb://admin:admin123@mongodb:27017/offerzone_users?authSource=admin
+      JWT_SECRET: your-super-secret-jwt-key-change-this-in-production
+    ports:
+      - "8010:8000"  # Changed external port to avoid conflict with Kong
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - offerzone-network
+    restart: unless-stopped
+
+  # Products Service
+  products-service:
+    build:
+      context: ./Products
+      dockerfile: Dockerfile
+    container_name: products-service
+    environment:
+      PORT: 8001
+      MONGODB_URI: mongodb://admin:admin123@mongodb:27017/offerzone_products?authSource=admin
+      JWT_SECRET: your-super-secret-jwt-key-change-this-in-production
+    ports:
+      - "8011:8001"  # Changed external port
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - offerzone-network
+    restart: unless-stopped
+
+  # Offers Service
+  offers-service:
+    build:
+      context: ./Offers
+      dockerfile: Dockerfile
+    container_name: offers-service
+    environment:
+      PORT: 8002
+      MONGODB_URI: mongodb://admin:admin123@mongodb:27017/offerzone_offers?authSource=admin
+      JWT_SECRET: your-super-secret-jwt-key-change-this-in-production
+    ports:
+      - "8012:8002"  # Changed external port
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - offerzone-network
+    restart: unless-stopped
+
+  # Notifications Service
+  notifications-service:
+    build:
+      context: ./Notifications
+      dockerfile: Dockerfile
+    container_name: notifications-service
+    environment:
+      PORT: 8003
+      MONGODB_URI: mongodb://admin:admin123@mongodb:27017/offerzone_notifications?authSource=admin
+      JWT_SECRET: your-super-secret-jwt-key-change-this-in-production
+    ports:
+      - "8013:8003"  # Changed external port
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - offerzone-network
+    restart: unless-stopped
+
+  # Favorites Service
+  favorites-service:
+    build:
+      context: ./Favorites
+      dockerfile: Dockerfile
+    container_name: favorites-service
+    environment:
+      PORT: 8004
+      MONGODB_URI: mongodb://admin:admin123@mongodb:27017/offerzone_favorites?authSource=admin
+      JWT_SECRET: your-super-secret-jwt-key-change-this-in-production
+    ports:
+      - "8014:8004"  # Changed external port
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - offerzone-network
+    restart: unless-stopped
+
+networks:
+  offerzone-network:
+    driver: bridge
+
+volumes:
+  kong_data:
+  mongo_data:
