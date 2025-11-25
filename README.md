@@ -6,11 +6,11 @@ A scalable microservices-based application for managing products, offers, favori
 
 This project implements a microservices architecture with the following services:
 
-- **User Service** (Port 8000) - User authentication and management
-- **Products Service** (Port 8000) - Product catalog management
-- **Offers Service** (Port 8002) - Deals and offers management
+- **User Service** (Port 8001) - User authentication and management
+- **Products Service** (Port 8002) - Product catalog management
+- **Offers Service** (Port 8003) - Deals and offers management
 - **Favorites Service** (Port 8004) - User favorites management
-- **Notifications Service** (Port 8003) - User notifications
+- **Notifications Service** (Port 8005) - User notifications
 
 ## Technology Stack
 
@@ -87,12 +87,12 @@ cd User && nodemon index.js
 
 ## API Endpoints
 
-### User Service (http://localhost:8001)
+### User Service (http://localhost:8000)
 - `POST /offerzone/users/register` - Register a new user
 - `POST /offerzone/users/login` - User login
 - `GET /offerzone/users/profile` - Get user profile (protected)
 
-### Products Service (http://localhost:8002)
+### Products Service (http://localhost:8001)
 - `GET /offerzone/products` - Get all products
 - `POST /offerzone/products` - Create a product (protected)
 - `GET /offerzone/products/:id` - Get product by ID
