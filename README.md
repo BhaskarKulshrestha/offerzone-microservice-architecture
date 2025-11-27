@@ -1207,7 +1207,149 @@ If problems persist:
 
 ---
 
-## 🚀 Future Enhancements
+## � Docker Hub Deployment
+
+### Pushing Images to Docker Hub
+
+All microservices have pre-configured Dockerfiles and can be pushed to Docker Hub for easy deployment.
+
+#### Prerequisites
+
+1. **Create a Docker Hub account** at [https://hub.docker.com](https://hub.docker.com)
+2. **Login to Docker Hub** from your terminal:
+   ```bash
+   docker login
+   ```
+   Enter your Docker Hub username and password when prompted.
+
+#### Quick Push (Automated Script) ⭐
+
+We've provided a script that builds and pushes all microservice images to a single Docker Hub repository with different tags:
+
+```bash
+# Make the script executable (first time only)
+chmod +x push-to-dockerhub.sh
+
+# Run the script with your Docker Hub repository
+./push-to-dockerhub.sh USERNAME/REPO_NAME
+
+# Example:
+./push-to-dockerhub.sh bhaskarkul/offerzone
+```
+
+The script will:
+- ✓ Build all 5 microservice images
+- ✓ Tag each service with its name (user-service, products-service, etc.)
+- ✓ Push all images to your single Docker Hub repository
+- ✓ Display pull commands for each image
+
+**Result**: All services in one repo with different tags:
+- `bhaskarkul/offerzone:user-service`
+- `bhaskarkul/offerzone:products-service`
+- `bhaskarkul/offerzone:offers-service`
+- `bhaskarkul/offerzone:notifications-service`
+- `bhaskarkul/offerzone:favorites-service`
+
+#### Manual Push (Step by Step)
+
+If you prefer to push images manually to a single repository:
+
+```bash
+# 1. Login to Docker Hub
+docker login
+
+# 2. Set your repository name
+REPO="bhaskarkul/offerzone"
+
+# 3. Build and tag User Service
+docker build -t $REPO:user-service ./User/
+docker push $REPO:user-service
+
+# 4. Build and tag Products Service
+docker build -t $REPO:products-service ./Products/
+docker push $REPO:products-service
+
+# 5. Build and tag Offers Service
+docker build -t $REPO:offers-service ./Offers/
+docker push $REPO:offers-service
+
+# 6. Build and tag Notifications Service
+docker build -t $REPO:notifications-service ./Notifications/
+docker push $REPO:notifications-service
+
+# 7. Build and tag Favorites Service
+docker build -t $REPO:favorites-service ./Favorites/
+docker push $REPO:favorites-service
+```
+
+#### Pushed Images
+
+After pushing, all your images will be available at one repository:
+- **Repository URL**: `https://hub.docker.com/r/bhaskarkul/offerzone`
+- **Tags**: user-service, products-service, offers-service, notifications-service, favorites-service
+#### Using Your Images
+
+To use your Docker Hub images instead of building locally, update `docker-compose.yml`:
+
+```yaml
+services:
+  user-service:
+    image: bhaskarkul/offerzone:user-service
+    # Remove or comment out the 'build' section
+    
+  products-service:
+    image: bhaskarkul/offerzone:products-service
+    # Remove or comment out the 'build' section
+    
+  offers-service:
+    image: bhaskarkul/offerzone:offers-service
+    
+  notifications-service:
+    image: bhaskarkul/offerzone:notifications-service
+    
+  favorites-service:
+    image: bhaskarkul/offerzone:favorites-service
+```
+
+Then anyone can run your application with:
+
+```bash
+docker-compose pull  # Pull images from Docker Hub
+docker-compose up -d # Start all services
+```
+
+#### Pull Individual Images
+
+Anyone can pull and run your images:
+
+```bash
+# Pull all images (from single repository with different tags)
+docker pull bhaskarkul/offerzone:user-service
+docker pull bhaskarkul/offerzone:products-service
+docker pull bhaskarkul/offerzone:offers-service
+docker pull bhaskarkul/offerzone:notifications-service
+docker pull bhaskarkul/offerzone:favorites-service
+
+# Or use docker-compose pull (if docker-compose.yml is configured)
+docker-compose pull
+```
+
+#### Quick Reference
+
+**Repository Structure**:
+```
+bhaskarkul/offerzone
+├── :user-service          (User authentication & management)
+├── :products-service      (Product catalog)
+├── :offers-service        (Deals & offers)
+├── :notifications-service (User notifications)
+└── :favorites-service     (User favorites)
+```
+```
+
+---
+
+## �🚀 Future Enhancements
 
 - [x] ✅ API Gateway implementation (Kong Gateway)
 - [x] ✅ Rate limiting and CORS
