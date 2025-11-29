@@ -1,9 +1,36 @@
 const Offer = require("../models/Offers");
 const logger = require("../utils/logger");
+const redisClient = require("../utils/redisClient");
+
+const CACHE_TTL = 3600; // 1 hour
+
+const clearOfferCache = async (id = null) => {
+    try {
+        if (id) {
+            await redisClient.del(`offer:${id}`);
+        }
+        const keys = await redisClient.keys("offers:list:*");
+        if (keys.length > 0) {
+            await redisClient.del(keys);
+        }
+    } catch (err) {
+        logger.error("Redis Cache Clear Error", err);
+    }
+};
 
 const resolvers = {
     Query: {
         getOffers: async (_, args) => {
+            const cacheKey = `offers:list:${JSON.stringify(args)}`;
+            try {
+                const cachedData = await redisClient.get(cacheKey);
+                if (cachedData) {
+                    return JSON.parse(cachedData);
+                }
+            } catch (err) {
+                logger.error("Redis Get Error", err);
+            }
+
             try {
                 const {
                     city,
@@ -33,7 +60,7 @@ const resolvers = {
                     Offer.countDocuments(filters),
                 ]);
 
-                return {
+                const result = {
                     success: true,
                     count: offers.length,
                     total,
@@ -41,15 +68,40 @@ const resolvers = {
                     totalPages: Math.ceil(total / limit),
                     offers,
                 };
+
+                try {
+                    await redisClient.set(cacheKey, JSON.stringify(result), { EX: CACHE_TTL });
+                } catch (err) {
+                    logger.error("Redis Set Error", err);
+                }
+
+                return result;
             } catch (err) {
                 logger.error("GraphQL GetOffers Error", { error: err.message });
                 throw new Error("Error fetching offers");
             }
         },
         getOffer: async (_, { id }) => {
+            const cacheKey = `offer:${id}`;
+            try {
+                const cachedData = await redisClient.get(cacheKey);
+                if (cachedData) {
+                    return JSON.parse(cachedData);
+                }
+            } catch (err) {
+                logger.error("Redis Get Error", err);
+            }
+
             try {
                 const offer = await Offer.findById(id);
                 if (!offer) throw new Error("Offer not found");
+
+                try {
+                    await redisClient.set(cacheKey, JSON.stringify(offer), { EX: CACHE_TTL });
+                } catch (err) {
+                    logger.error("Redis Set Error", err);
+                }
+
                 return offer;
             } catch (err) {
                 logger.error("GraphQL GetOffer Error", { error: err.message });
@@ -67,6 +119,7 @@ const resolvers = {
                     ...args,
                     retailer: user._id,
                 });
+                await clearOfferCache();
                 return offer;
             } catch (err) {
                 logger.error("GraphQL CreateOffer Error", { error: err.message });
@@ -87,6 +140,7 @@ const resolvers = {
 
                 Object.assign(offer, updates);
                 await offer.save();
+                await clearOfferCache(id);
                 return offer;
             } catch (err) {
                 logger.error("GraphQL UpdateOffer Error", { error: err.message });
@@ -106,6 +160,7 @@ const resolvers = {
                 }
 
                 await offer.deleteOne();
+                await clearOfferCache(id);
                 return { success: true, message: "Offer deleted" };
             } catch (err) {
                 logger.error("GraphQL DeleteOffer Error", { error: err.message });

@@ -1,5 +1,16 @@
 const Notification = require("../Models/Notifications");
 const logger = require("../utils/logger");
+const redisClient = require("../utils/redisClient");
+
+const CACHE_TTL = 3600; // 1 hour
+
+const clearNotificationCache = async (userId) => {
+    try {
+        await redisClient.del(`notifications:${userId}`);
+    } catch (err) {
+        logger.error("Redis Cache Clear Error", err);
+    }
+};
 
 const resolvers = {
     Query: {
@@ -7,8 +18,24 @@ const resolvers = {
             const user = context.req.user;
             if (!user) throw new Error("Unauthorized");
 
+            const cacheKey = `notifications:${user._id}`;
             try {
-                return await Notification.find({ userId: user._id }).sort("-createdAt");
+                const cachedData = await redisClient.get(cacheKey);
+                if (cachedData) {
+                    return JSON.parse(cachedData);
+                }
+            } catch (err) {
+                logger.error("Redis Get Error", err);
+            }
+
+            try {
+                const notifications = await Notification.find({ userId: user._id }).sort("-createdAt");
+                try {
+                    await redisClient.set(cacheKey, JSON.stringify(notifications), { EX: CACHE_TTL });
+                } catch (err) {
+                    logger.error("Redis Set Error", err);
+                }
+                return notifications;
             } catch (err) {
                 logger.error("GraphQL GetNotifications Error", { error: err.message });
                 throw new Error("Error fetching notifications");
@@ -29,6 +56,9 @@ const resolvers = {
                 }
 
                 const notification = await Notification.create(notificationData);
+                if (notification.userId) {
+                    await clearNotificationCache(notification.userId);
+                }
                 return notification;
             } catch (err) {
                 logger.error("GraphQL CreateNotification Error", { error: err.message });
@@ -49,6 +79,7 @@ const resolvers = {
 
                 notification.isRead = true;
                 await notification.save();
+                await clearNotificationCache(user._id);
                 return notification;
             } catch (err) {
                 logger.error("GraphQL MarkAsRead Error", { error: err.message });
@@ -68,6 +99,7 @@ const resolvers = {
                 }
 
                 await notification.deleteOne();
+                await clearNotificationCache(user._id);
                 return { success: true, message: "Notification deleted" };
             } catch (err) {
                 logger.error("GraphQL DeleteNotification Error", { error: err.message });
