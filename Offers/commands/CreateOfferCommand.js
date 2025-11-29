@@ -1,4 +1,4 @@
-const Offer = require("../models/Offers");
+const Offer = require("../Models/Offers");
 const logger = require("../utils/logger");
 
 const CreateOfferCommand = async (offerData, userId) => {

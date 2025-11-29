@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   mongo:
     image: mongo:6
@@ -8,52 +6,118 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongo_data:/data/db
+      - ./mongo-data:/data/db
+    networks:
+      - app-network
+
+  api-gateway:
+    build: ./ApiGateway
+    container_name: api-gateway
+    restart: always
+    ports:
+      - "8085:8085"
+    depends_on:
+      - user-service
+      - products-service
+      - offers-service
+      - favorites-service
+      - notifications-service
+    environment:
+      - USER_SERVICE_URL=http://user-service:8001
+      - PRODUCT_SERVICE_URL=http://product-service:8000
+      - OFFER_SERVICE_URL=http://offer-service:8002
+      - FAVORITE_SERVICE_URL=http://favorite-service:8004
+      - NOTIFICATION_SERVICE_URL=http://notification-service:8003 
+      - REDIS_URL=redis://redis:6379
+    networks:
+      - app-network
+
+  # Add Redis service
+  redis:
+    image: redis:7
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
 
   user-service:
     build: ./User
     ports:
-      - "8000:8000"
+      - "8001:8001"
+    volumes:
+      - ./protos:/protos:ro
     environment:
       MONGO_URI: mongodb://mongo:27017/user_db
+      REDIS_URL: "redis://redis:6379"
     depends_on:
       - mongo
+      - redis
+    networks:
+      - app-network
 
   products-service:
     build: ./Products
     ports:
-      - "8001:8001"
+      - "8000:8000"
+    volumes:
+      - ./protos:/protos:ro
     environment:
       MONGO_URI: mongodb://mongo:27017/products_db
+      REDIS_URL: "redis://redis:6379"
     depends_on:
       - mongo
+      - redis
+    networks:
+      - app-network
 
   offers-service:
     build: ./Offers
     ports:
       - "8002:8002"
+    volumes:
+      - ./protos:/protos:ro
     environment:
       MONGO_URI: mongodb://mongo:27017/offers_db
+      REDIS_URL: "redis://redis:6379"
     depends_on:
       - mongo
+      - redis
+    networks:
+      - app-network
 
   favorites-service:
     build: ./Favorites
     ports:
-      - "8003:8003"
+      - "8004:8004"
+    volumes:
+      - ./protos:/protos:ro
     environment:
       MONGO_URI: mongodb://mongo:27017/favorites_db
+      REDIS_URL: "redis://redis:6379"
     depends_on:
       - mongo
+      - redis
+    networks:
+      - app-network
 
   notifications-service:
     build: ./Notifications
     ports:
-      - "8004:8004"
+      - "8003:8003"
     environment:
       MONGO_URI: mongodb://mongo:27017/notifications_db
+      REDIS_URL: "redis://redis:6379"
     depends_on:
       - mongo
+      - redis
+    networks:
+      - app-network
 
 volumes:
   mongo_data:
+
+networks:
+  app-network:
+    driver: bridge

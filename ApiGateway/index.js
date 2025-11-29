@@ -27,19 +27,19 @@ const swaggerDocument = YAML.load("./swagger.yaml");
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.use("/offerzone/products", proxy("http://localhost:8000", {
+app.use("/offerzone/products", proxy("http://product-service:8000", {
     proxyReqPathResolver: (req) => "/offerzone/products" + req.url
 }));
-app.use("/offerzone/users", proxy("http://localhost:8001", {
+app.use("/offerzone/users", proxy("http://user-service:8001", {
     proxyReqPathResolver: (req) => "/offerzone/users" + req.url
 }));
-app.use("/offerzone/offers", proxy("http://localhost:8002", {
+app.use("/offerzone/offers", proxy("http://offer-service:8002", {
     proxyReqPathResolver: (req) => "/offerzone/offers" + req.url
 }));
-app.use("/offerzone/notifications", proxy("http://localhost:8003", {
+app.use("/offerzone/notifications", proxy("http://notification-service:8003", {
     proxyReqPathResolver: (req) => "/offerzone/notifications" + req.url
 }));
-app.use("/offerzone/favorites", proxy("http://localhost:8004", {
+app.use("/offerzone/favorites", proxy("http://favorite-service:8004", {
     proxyReqPathResolver: (req) => "/offerzone/favorites" + req.url
 }));
 

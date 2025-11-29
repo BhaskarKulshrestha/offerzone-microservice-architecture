@@ -1,4 +1,4 @@
-const Offer = require("../models/Offers");
+const Offer = require("../Models/Offers");
 const enrichOffers = require("../utils/enrichOffers");
 const { searchProducts } = require("../utils/serviceCommunicator");
 const logger = require("../utils/logger");
