@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: favorites
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: favorites
+  template:
+    metadata:
+      labels:
+        app: favorites
+    spec:
+      containers:
+      - name: favorites
+        image: offerzone-favorites:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8004
+        envFrom:
+        - configMapRef:
+            name: app-config
+        - secretRef:
+            name: app-secrets
+        env:
+        - name: PORT
+          value: "8004"
+        - name: MONGO_URI
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: MONGO_URI_FAVORITES
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: favorites
+spec:
+  selector:
+    app: favorites
+  ports:
+  - name: http
+    port: 8004
+    targetPort: 8004

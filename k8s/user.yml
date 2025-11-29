@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user
+  template:
+    metadata:
+      labels:
+        app: user
+    spec:
+      containers:
+      - name: user
+        image: offerzone-user:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8001
+        - containerPort: 50052
+        envFrom:
+        - configMapRef:
+            name: app-config
+        - secretRef:
+            name: app-secrets
+        env:
+        - name: PORT
+          value: "8001"
+        - name: GRPC_PORT
+          value: "50052"
+        - name: MONGO_URI
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: MONGO_URI_USERS
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: user
+spec:
+  selector:
+    app: user
+  ports:
+  - name: http
+    port: 8001
+    targetPort: 8001
+  - name: grpc
+    port: 50052
+    targetPort: 50052

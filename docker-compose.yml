@@ -17,6 +17,7 @@ services:
     build:
       context: .
       dockerfile: ApiGateway/Dockerfile
+    image: offerzone-api-gateway:latest
     ports:
       - "8085:8085"
     environment:
@@ -39,6 +40,7 @@ services:
     build:
       context: .
       dockerfile: Products/Dockerfile
+    image: offerzone-products:latest
     ports:
       - "8000:8000"
       - "50051:50051"
@@ -55,6 +57,7 @@ services:
     build:
       context: .
       dockerfile: User/Dockerfile
+    image: offerzone-user:latest
     ports:
       - "8001:8001"
       - "50052:50052"
@@ -71,6 +74,7 @@ services:
     build:
       context: .
       dockerfile: Offers/Dockerfile
+    image: offerzone-offers:latest
     ports:
       - "8002:8002"
     environment:
@@ -89,6 +93,7 @@ services:
     build:
       context: .
       dockerfile: Notifications/Dockerfile
+    image: offerzone-notifications:latest
     ports:
       - "8003:8003"
     environment:
@@ -103,6 +108,7 @@ services:
     build:
       context: .
       dockerfile: Favorites/Dockerfile
+    image: offerzone-favorites:latest
     ports:
       - "8004:8004"
     environment:
