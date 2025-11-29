@@ -2,6 +2,7 @@ const grpc = require("@grpc/grpc-js");
 const protoLoader = require("@grpc/proto-loader");
 const path = require("path");
 const logger = require("./logger");
+const createBreaker = require("./circuitBreaker");
 
 // Load Protos
 const PRODUCT_PROTO_PATH = path.join(__dirname, "../../protos/product.proto");
@@ -27,37 +28,32 @@ const userProto = grpc.loadPackageDefinition(userPackageDefinition).user;
 
 // Create Clients
 const productClient = new productProto.ProductService(
-    "localhost:50051",
+    "127.0.0.1:50051",
     grpc.credentials.createInsecure()
 );
 const userClient = new userProto.UserService(
-    "localhost:50052",
+    "127.0.0.1:50052",
     grpc.credentials.createInsecure()
 );
 
-// Promisify gRPC Calls
-const getProductById = (productId) => {
+// Raw gRPC Calls
+const getProductByIdRaw = (productId) => {
     return new Promise((resolve, reject) => {
         productClient.GetProduct({ id: productId }, (error, response) => {
             if (error) {
-                logger.error(`gRPC GetProduct Failed: ${productId}`, { error: error.message });
-                resolve(null); // Return null on error (fallback)
+                reject(error);
             } else {
-                // Map response to expected format (if needed, but proto matches well)
-                // Note: Proto response has 'id', but Mongoose expects '_id'.
-                // We might need to map 'id' to '_id' for compatibility.
                 resolve({ ...response, _id: response.id });
             }
         });
     });
 };
 
-const getUserById = (userId) => {
+const getUserByIdRaw = (userId) => {
     return new Promise((resolve, reject) => {
         userClient.GetUser({ id: userId }, (error, response) => {
             if (error) {
-                logger.error(`gRPC GetUser Failed: ${userId}`, { error: error.message });
-                resolve(null);
+                reject(error);
             } else {
                 resolve({ ...response, _id: response.id });
             }
@@ -65,9 +61,8 @@ const getUserById = (userId) => {
     });
 };
 
-const searchProducts = (params) => {
+const searchProductsRaw = (params) => {
     return new Promise((resolve, reject) => {
-        // Map params to SearchRequest
         const request = {
             category: params.category,
             brand: params.brand,
@@ -76,16 +71,24 @@ const searchProducts = (params) => {
 
         productClient.SearchProducts(request, (error, response) => {
             if (error) {
-                logger.error("gRPC SearchProducts Failed", { error: error.message });
-                resolve([]);
+                reject(error);
             } else {
-                // Map products list
                 const products = response.products.map((p) => ({ ...p, _id: p.id }));
                 resolve(products);
             }
         });
     });
 };
+
+// Circuit Breakers
+const productBreaker = createBreaker(getProductByIdRaw, () => null);
+const userBreaker = createBreaker(getUserByIdRaw, () => null);
+const searchBreaker = createBreaker(searchProductsRaw, () => []);
+
+// Exported Functions
+const getProductById = (productId) => productBreaker.fire(productId);
+const getUserById = (userId) => userBreaker.fire(userId);
+const searchProducts = (params) => searchBreaker.fire(params);
 
 module.exports = {
     getProductById,

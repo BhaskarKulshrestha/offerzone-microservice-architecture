@@ -1,4 +1,4 @@
-const Offer = require("../models/Offers");
+const Offer = require("../Models/Offers");
 const logger = require("../utils/logger");
 const redisClient = require("../utils/redisClient");
 
@@ -7,7 +7,7 @@ const CACHE_TTL = 3600; // 1 hour
 const clearOfferCache = async (id = null) => {
     try {
         if (id) {
-            await redisClient.del(`offer:${id}`);
+            await redisClient.del(`offer:${id} `);
         }
         const keys = await redisClient.keys("offers:list:*");
         if (keys.length > 0) {
@@ -21,7 +21,7 @@ const clearOfferCache = async (id = null) => {
 const resolvers = {
     Query: {
         getOffers: async (_, args) => {
-            const cacheKey = `offers:list:${JSON.stringify(args)}`;
+            const cacheKey = `offers: list:${JSON.stringify(args)} `;
             try {
                 const cachedData = await redisClient.get(cacheKey);
                 if (cachedData) {
@@ -82,7 +82,7 @@ const resolvers = {
             }
         },
         getOffer: async (_, { id }) => {
-            const cacheKey = `offer:${id}`;
+            const cacheKey = `offer:${id} `;
             try {
                 const cachedData = await redisClient.get(cacheKey);
                 if (cachedData) {

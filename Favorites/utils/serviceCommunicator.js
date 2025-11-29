@@ -3,6 +3,7 @@ const grpc = require("@grpc/grpc-js");
 const protoLoader = require("@grpc/proto-loader");
 const path = require("path");
 const logger = require("./logger");
+const createBreaker = require("./circuitBreaker");
 
 const OFFER_SERVICE_URL = "http://localhost:8002/offerzone/offers";
 
@@ -22,12 +23,11 @@ const productClient = new productProto.ProductService(
     grpc.credentials.createInsecure()
 );
 
-const getProductById = (productId) => {
+const getProductByIdRaw = (productId) => {
     return new Promise((resolve, reject) => {
         productClient.GetProduct({ id: productId }, (error, response) => {
             if (error) {
-                logger.error(`gRPC GetProduct Failed: ${productId}`, { error: error.message });
-                resolve(null);
+                reject(error);
             } else {
                 resolve({ ...response, _id: response.id });
             }
@@ -35,15 +35,22 @@ const getProductById = (productId) => {
     });
 };
 
-const getOfferById = async (offerId) => {
+const getOfferByIdRaw = async (offerId) => {
     try {
         const response = await axios.get(`${OFFER_SERVICE_URL}/${offerId}`);
         return response.data.offer;
     } catch (error) {
-        logger.error(`Failed to fetch offer ${offerId}`, { error: error.message });
-        return null;
+        throw error;
     }
 };
+
+// Circuit Breakers
+const productBreaker = createBreaker(getProductByIdRaw, () => null);
+const offerBreaker = createBreaker(getOfferByIdRaw, () => null);
+
+// Exported Functions
+const getProductById = (productId) => productBreaker.fire(productId);
+const getOfferById = (offerId) => offerBreaker.fire(offerId);
 
 module.exports = {
     getProductById,
