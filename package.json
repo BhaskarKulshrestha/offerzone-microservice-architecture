@@ -1,0 +1,23 @@
+{
+    "name": "offerzone-microservices",
+    "version": "1.0.0",
+    "description": "OfferZone Microservices Architecture",
+    "scripts": {
+        "install-all": "npm install && cd ApiGateway && npm install && cd ../Products && npm install && cd ../User && npm install && cd ../Offers && npm install && cd ../Notifications && npm install && cd ../Favorites && npm install",
+        "start": "concurrently \"npm run start:gateway\" \"npm run start:products\" \"npm run start:user\" \"npm run start:offers\" \"npm run start:notifications\" \"npm run start:favorites\"",
+        "start:gateway": "cd ApiGateway && npm start",
+        "start:products": "cd Products && npm start",
+        "start:user": "cd User && npm start",
+        "start:offers": "cd Offers && npm start",
+        "start:notifications": "cd Notifications && npm start",
+        "start:favorites": "cd Favorites && npm start"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "@grpc/grpc-js": "^1.14.1",
+        "@grpc/proto-loader": "^0.8.0",
+        "axios": "^1.13.2"
+    }
+}

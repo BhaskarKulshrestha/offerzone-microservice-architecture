@@ -1,0 +1,123 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6380:6379"
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    image: offerzone-api-gateway:latest
+    ports:
+      - "8085:8085"
+    environment:
+      - PORT=8085
+      - PRODUCTS_SERVICE_URL=http://products:8000
+      - USER_SERVICE_URL=http://user:8001
+      - OFFERS_SERVICE_URL=http://offers:8002
+      - NOTIFICATIONS_SERVICE_URL=http://notifications:8003
+      - FAVORITES_SERVICE_URL=http://favorites:8004
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - products
+      - user
+      - offers
+      - notifications
+      - favorites
+      - redis
+
+  products:
+    build:
+      context: .
+      dockerfile: Products/Dockerfile
+    image: offerzone-products:latest
+    ports:
+      - "8000:8000"
+      - "50051:50051"
+    environment:
+      - PORT=8000
+      - GRPC_PORT=50051
+      - MONGO_URI=mongodb://mongo:27017/products
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - mongo
+      - redis
+
+  user:
+    build:
+      context: .
+      dockerfile: User/Dockerfile
+    image: offerzone-user:latest
+    ports:
+      - "8001:8001"
+      - "50052:50052"
+    environment:
+      - PORT=8001
+      - GRPC_PORT=50052
+      - MONGO_URI=mongodb://mongo:27017/users
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - mongo
+      - redis
+
+  offers:
+    build:
+      context: .
+      dockerfile: Offers/Dockerfile
+    image: offerzone-offers:latest
+    ports:
+      - "8002:8002"
+    environment:
+      - PORT=8002
+      - MONGO_URI=mongodb://mongo:27017/offers
+      - REDIS_URL=redis://redis:6379
+      - PRODUCT_GRPC_URL=products:50051
+      - USER_GRPC_URL=user:50052
+    depends_on:
+      - mongo
+      - redis
+      - products
+      - user
+
+  notifications:
+    build:
+      context: .
+      dockerfile: Notifications/Dockerfile
+    image: offerzone-notifications:latest
+    ports:
+      - "8003:8003"
+    environment:
+      - PORT=8003
+      - MONGO_URI=mongodb://mongo:27017/notifications
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - mongo
+      - redis
+
+  favorites:
+    build:
+      context: .
+      dockerfile: Favorites/Dockerfile
+    image: offerzone-favorites:latest
+    ports:
+      - "8004:8004"
+    environment:
+      - PORT=8004
+      - MONGO_URI=mongodb://mongo:27017/favorites
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - mongo
+      - redis
+
+volumes:
+  mongo-data:
