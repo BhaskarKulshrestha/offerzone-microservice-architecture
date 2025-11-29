@@ -37,6 +37,24 @@ app.get("/", (req, res) => {
 
 app.use("/offerzone/offers", OfferRoutes);
 
+// GraphQL Setup
+const { createYoga, createSchema } = require("graphql-yoga");
+const typeDefs = require("./graphql/schema");
+const resolvers = require("./graphql/resolvers");
+
+const yoga = createYoga({
+  schema: createSchema({
+    typeDefs,
+    resolvers,
+  }),
+  context: ({ req }) => ({ req }),
+  graphqlEndpoint: "/graphql",
+});
+
+app.use("/graphql", yoga);
+
+
+
 
 // Global Error Handler
 app.use((err, req, res, next) => {

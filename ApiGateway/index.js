@@ -10,10 +10,16 @@ const port = process.env.PORT || 8085;
 app.use(cors());
 app.use(morgan("combined"));
 
-app.use("/offerzone/products", proxy("http://localhost:8001", {
+const swaggerUi = require("swagger-ui-express");
+const YAML = require("yamljs");
+const swaggerDocument = YAML.load("./swagger.yaml");
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+app.use("/offerzone/products", proxy("http://localhost:8000", {
     proxyReqPathResolver: (req) => "/offerzone/products" + req.url
 }));
-app.use("/offerzone/users", proxy("http://localhost:8000", {
+app.use("/offerzone/users", proxy("http://localhost:8001", {
     proxyReqPathResolver: (req) => "/offerzone/users" + req.url
 }));
 app.use("/offerzone/offers", proxy("http://localhost:8002", {

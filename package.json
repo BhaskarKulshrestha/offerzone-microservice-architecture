@@ -14,5 +14,10 @@
     },
     "devDependencies": {
         "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "@grpc/grpc-js": "^1.14.1",
+        "@grpc/proto-loader": "^0.8.0",
+        "axios": "^1.13.2"
     }
 }
