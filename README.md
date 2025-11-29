@@ -1,33 +1,106 @@
 # OfferZone - Microservices Architecture
 
-A scalable microservices-based application for managing products, offers, favorites, and notifications.
+A scalable microservices-based application for managing products, offers, favorites, and notifications with Kubernetes deployment support.
+
+## 🚀 Quick Start (Automated Setup)
+
+**For new users**, we provide an automated setup script that checks for prerequisites and sets up everything:
+
+```bash
+git clone https://github.com/BhaskarKulshrestha/offerzone-microservice-architecture.git
+cd offerzone-microservice-architecture
+./setup.sh
+```
+
+The script will:
+- ✅ Check for required tools (Docker, kubectl, Minikube, Node.js)
+- 🔧 Install missing prerequisites automatically (on macOS/Linux)
+- 🐳 Build all Docker images
+- ☸️ Deploy to Kubernetes
+- 🚀 Start all services
+
+**That's it!** Your application will be running on Kubernetes.
+
+---
 
 ## Architecture
 
 This project implements a microservices architecture with the following services:
 
-- **User Service** (Port 8001) - User authentication and management
-- **Products Service** (Port 8002) - Product catalog management
+- **API Gateway** (Port 8085) - Single entry point with rate limiting and routing
+- **User Service** (Port 8001, gRPC 50052) - User authentication and management
+- **Products Service** (Port 8002, gRPC 50051) - Product catalog management
 - **Offers Service** (Port 8003) - Deals and offers management
 - **Favorites Service** (Port 8004) - User favorites management
 - **Notifications Service** (Port 8005) - User notifications
+- **MongoDB** (Port 27017) - Database
+- **Redis** (Port 6379) - Caching layer
 
 ## Technology Stack
 
 - **Runtime**: Node.js
 - **Framework**: Express.js
+- **API Gateway**: Custom with rate limiting, circuit breaker
 - **Database**: MongoDB
+- **Cache**: Redis
+- **Communication**: REST APIs, gRPC
+- **Orchestration**: Kubernetes, Docker
 - **Authentication**: JWT
 - **Logging**: Winston
-- **HTTP Logging**: Morgan
+- **API Documentation**: Swagger/OpenAPI
 
-## Prerequisites
+## Deployment Options
+
+### Option 1: Kubernetes (Recommended)
+
+See [SETUP_FOR_NEW_USERS.md](SETUP_FOR_NEW_USERS.md) for detailed setup instructions.
+
+**Quick Deploy:**
+```bash
+# Automated setup (checks prerequisites, installs if needed)
+./setup.sh
+
+# Or manual deployment
+cd k8s
+./build-images.sh      # Build all Docker images
+./quick-deploy.sh      # Deploy to Kubernetes
+```
+
+**Access the application:**
+```bash
+# Get API Gateway URL
+minikube service api-gateway --url
+
+# Or use port forwarding
+kubectl port-forward svc/api-gateway 8085:8085
+# Then access: http://localhost:8085
+```
+
+**Available Endpoints:**
+- `GET /offerzone/products` - List all products
+- `GET /offerzone/users` - List all users
+- `GET /offerzone/offers` - List all offers
+- `GET /offerzone/notifications` - List notifications
+- `GET /offerzone/favorites` - List favorites
+
+### Option 2: Docker Compose
+
+```bash
+docker-compose up -d
+```
+
+### Option 3: Local Development
+
+## Prerequisites (Manual Setup)
 
 - Node.js (v14 or higher)
+- Docker & Docker Desktop
+- kubectl (v1.30+)
+- Minikube
 - MongoDB (local or Atlas)
 - npm or yarn
 
-## Installation
+## Installation (Manual)
 
 ### 1. Clone the repository
 ```bash
@@ -35,7 +108,18 @@ git clone https://github.com/BhaskarKulshrestha/offerzone-microservice-architect
 cd offerzone-microservice-architecture
 ```
 
-### 2. Install dependencies for each service
+### 2. Set up environment files
+```bash
+# Copy example files
+cp .env.example .env
+cp k8s/secrets.yml.example k8s/secrets.yml
+
+# Edit with your values
+nano .env
+nano k8s/secrets.yml
+```
+
+### 3. Install dependencies for each service
 ```bash
 # User Service
 cd User && npm install
