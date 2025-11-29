@@ -1,5 +1,5 @@
-const Offer = require("../models/Offers");
-const Product = require("../models/Product");
+const Offer = require("../Models/Offers");
+const Product = require("../Models/Product");
 const logger = require("../utils/logger"); // <-- ADDED LOGGER
 
 const sendError = (res, code, message) => {

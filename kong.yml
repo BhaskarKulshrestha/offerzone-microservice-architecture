@@ -1,0 +1,126 @@
+_format_version: "3.0"
+_transform: true
+
+# Kong API Gateway Configuration for OfferZone Microservices
+# This file defines services, routes, and plugins in a declarative way
+
+services:
+  # User Service Configuration
+  - name: user-service
+    url: http://user-service:8000
+    routes:
+      - name: user-route
+        paths:
+          - /offerzone/users
+        strip_path: false
+        methods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
+          - PATCH
+          - OPTIONS
+
+  # Products Service Configuration
+  - name: products-service
+    url: http://products-service:8001
+    routes:
+      - name: products-route
+        paths:
+          - /offerzone/products
+        strip_path: false
+        methods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
+          - PATCH
+          - OPTIONS
+
+  # Offers Service Configuration
+  - name: offers-service
+    url: http://offers-service:8002
+    routes:
+      - name: offers-route
+        paths:
+          - /offerzone/offers
+        strip_path: false
+        methods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
+          - PATCH
+          - OPTIONS
+
+  # Notifications Service Configuration
+  - name: notifications-service
+    url: http://notifications-service:8003
+    routes:
+      - name: notifications-route
+        paths:
+          - /offerzone/notifications
+        strip_path: false
+        methods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
+          - PATCH
+          - OPTIONS
+
+  # Favorites Service Configuration
+  - name: favorites-service
+    url: http://favorites-service:8004
+    routes:
+      - name: favorites-route
+        paths:
+          - /offerzone/favorites
+        strip_path: false
+        methods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
+          - PATCH
+          - OPTIONS
+
+# Global Plugins
+plugins:
+  # Rate Limiting Plugin
+  - name: rate-limiting
+    config:
+      minute: 1000
+      hour: 10000
+      policy: local
+
+  # CORS Plugin
+  - name: cors
+    config:
+      origins:
+        - "*"
+      methods:
+        - GET
+        - POST
+        - PUT
+        - DELETE
+        - PATCH
+        - OPTIONS
+      headers:
+        - Accept
+        - Accept-Version
+        - Content-Length
+        - Content-MD5
+        - Content-Type
+        - Date
+        - Authorization
+      exposed_headers:
+        - X-Auth-Token
+      credentials: true
+      max_age: 3600
+
+  # Request Logging Plugin
+  - name: file-log
+    config:
+      path: /tmp/kong.log
+      reopen: true
