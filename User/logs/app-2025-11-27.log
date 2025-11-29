@@ -1,0 +1,6 @@
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-27 23:23:35"}
+{"level":"info","message":"gRPC Server running on port 50052","timestamp":"2025-11-27 23:23:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-27 23:23:35"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-27 23:54:44"}
+{"level":"info","message":"gRPC Server running on port 50052","timestamp":"2025-11-27 23:54:44"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-27 23:54:44"}

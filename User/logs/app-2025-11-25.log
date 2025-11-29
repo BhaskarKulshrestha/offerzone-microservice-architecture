@@ -1,0 +1,100 @@
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 22:44:51"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 22:44:52"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:05:09"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:05:09"}
+{"body":{"name":"test"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:05:14"}
+{"level":"warn","message":"Auth Error Response: Missing required fields.","timestamp":"2025-11-25 23:05:14"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:35:14 +0000] \"POST /offerzone/users HTTP/1.1\" 400 54 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:05:14"}
+{"body":{"name":"test"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:05:22"}
+{"level":"warn","message":"Auth Error Response: Missing required fields.","timestamp":"2025-11-25 23:05:22"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:35:22 +0000] \"POST /offerzone/users/ HTTP/1.1\" 400 54 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:05:22"}
+{"body":{"name":"test"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:05:22"}
+{"level":"warn","message":"Auth Error Response: Missing required fields.","timestamp":"2025-11-25 23:05:22"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:35:22 +0000] \"POST /offerzone/users/ HTTP/1.1\" 400 54 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:05:22"}
+{"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:06:05"}
+{"level":"warn","message":"Auth Error Response: Request body is empty.","timestamp":"2025-11-25 23:06:05"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:36:05 +0000] \"POST /offerzone/users/ HTTP/1.1\" 400 52 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:06:05"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:07:55"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:07:56"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:08:11"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:08:12"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:09:16"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:17"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:09:30"}
+{"level":"warn","message":"Auth Error Response: Request body is empty.","timestamp":"2025-11-25 23:09:30"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:39:30 +0000] \"POST /offerzone/users/ HTTP/1.1\" 400 52 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:09:30"}
+{"body":{"city":"Bengaluru","email":"john@example.com","name":"John Doe","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:09:38"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:09:38","userId":"6925e9da3d73298e66bd292a"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:39:38 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 411 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:09:38"}
+{"email":"john@example.com","level":"info","message":"Login attempt","timestamp":"2025-11-25 23:09:48"}
+{"level":"info","message":"Login successful","role":"retailer","timestamp":"2025-11-25 23:09:48","userId":"6925e9da3d73298e66bd292a"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:39:48 +0000] \"POST /offerzone/users/session HTTP/1.1\" 200 410 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:09:48"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:41:08 +0000] \"GET /offerzone/users/ HTTP/1.1\" 404 155 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:11:08"}
+{"body":{"city":"Bengaluru","email":"john@example.com","name":"John Doe","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:11:14"}
+{"email":"john@example.com","level":"warn","message":"Signup failed - email already exists","timestamp":"2025-11-25 23:11:14"}
+{"level":"warn","message":"Auth Error Response: User already exists with this email.","timestamp":"2025-11-25 23:11:14"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:41:14 +0000] \"POST /offerzone/users/ HTTP/1.1\" 409 66 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:11:14"}
+{"body":{"city":"Bengaluru","email":"jon@example.com","name":"John Doe","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:11:19"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:11:19","userId":"6925ea3f3d73298e66bd292f"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:41:19 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 408 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:11:19"}
+{"body":{"city":"Bengaluru","email":"jon@example.com","name":"John Doe","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:11:43"}
+{"email":"jon@example.com","level":"warn","message":"Signup failed - email already exists","timestamp":"2025-11-25 23:11:43"}
+{"level":"warn","message":"Auth Error Response: User already exists with this email.","timestamp":"2025-11-25 23:11:43"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:41:43 +0000] \"POST /offerzone/users/ HTTP/1.1\" 409 66 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:11:43"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:22:59"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:22:59"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:23:01"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:23:01"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:23:02"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:23:02"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:28:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:28:04"}
+{"body":{"city":"Bengaluru","email":"retailer_1764093504322@test.com","name":"Test Retailer","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:28:24","userId":"6925ee403d73298e66bd2933"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:58:24 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 451 \"-\" \"node\"","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:58:24 +0000] \"POST /offerzone/users/batch HTTP/1.1\" 404 161 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:29:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:29:05"}
+{"body":{"city":"Bengaluru","email":"retailer_1764093557108@test.com","name":"Test Retailer","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:29:17","userId":"6925ee753d73298e66bd2936"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:59:17 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 451 \"-\" \"node\"","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:59:17 +0000] \"POST /offerzone/users/batch HTTP/1.1\" 404 161 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:30:09"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:30:10"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:11:02 +0000] \"POST /offerzone/users/register HTTP/1.1\" 404 164 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:41:02"}
+{"level":"info","message":"Root endpoint accessed","timestamp":"2025-11-25 23:41:20"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:11:20 +0000] \"GET / HTTP/1.1\" 200 38 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:41:20"}
+{"body":{"city":"Test City","email":"test1764094363960@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:42:43"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:42:44","userId":"6925f19c163abaeb05c902b3"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:12:44 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:42:44"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:44:43"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:44:44"}
+{"body":{"city":"Test City","email":"test1764094516552@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:45:16","userId":"6925f23463546788fa9fde94"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:15:16 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:15:16 +0000] \"GET /offerzone/users/6925f23463546788fa9fde94 HTTP/1.1\" 404 179 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:48:14"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:48:15"}
+{"body":{"city":"Test City","email":"test1764094708093@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:48:28"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:48:28","userId":"6925f2f430ea4ae161813791"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:18:28 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:48:28"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-25 23:48:28","userId":"6925f2f430ea4ae161813791"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:18:28 +0000] \"GET /offerzone/users/6925f2f430ea4ae161813791 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:48:28"}
+{"body":{"city":"Test City","email":"test1764094756988@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:49:17","userId":"6925f32530ea4ae161813795"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-25 23:49:17","userId":"6925f32530ea4ae161813795"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"GET /offerzone/users/6925f32530ea4ae161813795 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-25 23:49:17","userId":"6925f32530ea4ae161813795"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"GET /offerzone/users/6925f32530ea4ae161813795 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"body":{"city":"Bengaluru","email":"jon@example.com","name":"John Doe","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:53:07"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-25 23:53:07","userId":"6925f40b30ea4ae16181379a"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:23:07 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 408 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:53:07"}
+{"body":{"city":"Bengaluru","email":"jon@example.com","name":"John Doe","password":"password123","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-25 23:53:10"}
+{"email":"jon@example.com","level":"warn","message":"Signup failed - email already exists","timestamp":"2025-11-25 23:53:10"}
+{"level":"warn","message":"Auth Error Response: User already exists with this email.","timestamp":"2025-11-25 23:53:10"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:23:10 +0000] \"POST /offerzone/users/ HTTP/1.1\" 409 66 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:53:10"}

@@ -1,0 +1,111 @@
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 22:44:51"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 22:44:52"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 22:55:36"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 22:55:37"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 22:56:39"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 22:56:39"}
+{"level":"info","message":"Root endpoint accessed","timestamp":"2025-11-25 22:56:57"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:26:57 +0000] \"GET / HTTP/1.1\" 200 41 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 22:56:57"}
+{"level":"info","message":"Fetching all products","query":{},"timestamp":"2025-11-25 22:56:57"}
+{"filters":{},"level":"info","message":"Applied product filters","timestamp":"2025-11-25 22:56:57"}
+{"level":"info","message":"Products fetched successfully","returned":10,"timestamp":"2025-11-25 22:56:57","total":17}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:26:57 +0000] \"GET /offerzone/products HTTP/1.1\" 200 3477 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 22:56:57"}
+{"level":"info","message":"Root endpoint accessed","timestamp":"2025-11-25 22:57:33"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:27:33 +0000] \"GET / HTTP/1.1\" 200 41 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 22:57:33"}
+{"level":"info","message":"Fetching all products","query":{},"timestamp":"2025-11-25 22:57:58"}
+{"filters":{},"level":"info","message":"Applied product filters","timestamp":"2025-11-25 22:57:58"}
+{"level":"info","message":"Products fetched successfully","returned":10,"timestamp":"2025-11-25 22:57:58","total":17}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:27:58 +0000] \"GET /offerzone/products/ HTTP/1.1\" 200 3477 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 22:57:58"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:07:45"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:07:46"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:08:11"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:08:12"}
+{"level":"info","message":"Fetching all products","query":{},"timestamp":"2025-11-25 23:08:26"}
+{"filters":{},"level":"info","message":"Applied product filters","timestamp":"2025-11-25 23:08:26"}
+{"level":"info","message":"Products fetched successfully","returned":10,"timestamp":"2025-11-25 23:08:26","total":17}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:38:26 +0000] \"GET /offerzone/products/ HTTP/1.1\" 200 3477 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:08:26"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:09:16"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:16"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:01 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:01"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:10 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:10"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:14 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:14"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:14 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:14"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:15 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:15"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:26 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:26"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:39 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:39"}
+{"level":"info","message":"Fetching all products","query":{},"timestamp":"2025-11-25 23:10:41"}
+{"filters":{},"level":"info","message":"Applied product filters","timestamp":"2025-11-25 23:10:41"}
+{"level":"info","message":"Products fetched successfully","returned":10,"timestamp":"2025-11-25 23:10:42","total":17}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:40:42 +0000] \"GET /offerzone/products/ HTTP/1.1\" 200 3477 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:10:42"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:41:47 +0000] \"POST /offerzone/products/ HTTP/1.1\" 401 43 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:11:47"}
+{"body":{"city":"Bengaluru","email":"jon@example.com","name":"John Doe","password":"password123","role":"retailer"},"level":"info","message":"Creating new product","timestamp":"2025-11-25 23:11:52","user":"6925ea3f3d73298e66bd292f"}
+{"level":"warn","message":"Error Response: All required fields must be provided.","timestamp":"2025-11-25 23:11:52"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:41:52 +0000] \"POST /offerzone/products/ HTTP/1.1\" 400 67 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:11:52"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:22:12"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:22:13"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:23:22"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:23:22"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:23:24"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:23:24"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:23:53"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:23:54"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:23:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:23:57"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:23:59"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:24:00"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:24:18"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:24:19"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:24:39"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:24:40"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:28:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:28:04"}
+{"body":{"area":"Koramangala","brand":"Test Brand","category":"Test Category","city":"Bengaluru","image":"http://example.com/image.jpg","name":"Test Product","price":1000},"level":"info","message":"Creating new product","timestamp":"2025-11-25 23:28:24","user":"6925ee403d73298e66bd2933"}
+{"level":"info","message":"Product created successfully","productId":"6925ee40680cee22e2c8b406","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:58:24 +0000] \"POST /offerzone/products/ HTTP/1.1\" 201 375 \"-\" \"node\"","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:58:24 +0000] \"POST /offerzone/products/batch HTTP/1.1\" 200 350 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:29:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:29:07"}
+{"body":{"area":"Koramangala","brand":"Test Brand","category":"Test Category","city":"Bengaluru","image":"http://example.com/image.jpg","name":"Test Product","price":1000},"level":"info","message":"Creating new product","timestamp":"2025-11-25 23:29:17","user":"6925ee753d73298e66bd2936"}
+{"level":"info","message":"Product created successfully","productId":"6925ee75680cee22e2c8b409","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:59:17 +0000] \"POST /offerzone/products/ HTTP/1.1\" 201 375 \"-\" \"node\"","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:59:17 +0000] \"POST /offerzone/products/batch HTTP/1.1\" 200 350 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:30:09"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:30:10"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"Root endpoint accessed","timestamp":"2025-11-25 23:41:20"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:11:20 +0000] \"GET / HTTP/1.1\" 200 41 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:41:20"}
+{"level":"error","message":"Unhandled API Error Cannot read properties of null (reading 'role')","route":"/offerzone/products/","stack":"TypeError: Cannot read properties of null (reading 'role')\n    at /Users/I528996/Desktop/offerzone-microservice-architecture/Products/Middleware/authMiddleware.js:29:34\n    at Layer.handleRequest (/Users/I528996/Desktop/offerzone-microservice-architecture/Products/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/I528996/Desktop/offerzone-microservice-architecture/Products/node_modules/router/lib/route.js:157:13)\n    at exports.protect (/Users/I528996/Desktop/offerzone-microservice-architecture/Products/Middleware/authMiddleware.js:20:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-11-25 23:42:44"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:12:44 +0000] \"POST /offerzone/products/ HTTP/1.1\" 500 51 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:42:44"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:44:43"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:44:44"}
+{"body":{"area":"Test Area","brand":"Test Brand","category":"Electronics","city":"Test City","description":"Test Description","name":"Test Product","price":100},"level":"info","message":"Creating new product","timestamp":"2025-11-25 23:45:16","user":"6925f23463546788fa9fde94"}
+{"level":"info","message":"Product created successfully","productId":"6925f23445bb3819b5a1aedd","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:15:16 +0000] \"POST /offerzone/products/ HTTP/1.1\" 201 364 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:45:16"}
+{"id":"6925f23445bb3819b5a1aedd","level":"info","message":"Fetching product by ID","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:15:16 +0000] \"GET /offerzone/products/6925f23445bb3819b5a1aedd HTTP/1.1\" 200 314 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-25 23:48:14"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:48:15"}
+{"body":{"area":"Test Area","brand":"Test Brand","category":"Electronics","city":"Test City","description":"Test Description","name":"Test Product","price":100},"level":"info","message":"Creating new product","timestamp":"2025-11-25 23:48:28","user":"6925f2f430ea4ae161813791"}
+{"level":"info","message":"Product created successfully","productId":"6925f2f43ceb0080656e2327","timestamp":"2025-11-25 23:48:28"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:18:28 +0000] \"POST /offerzone/products/ HTTP/1.1\" 201 364 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:48:28"}
+{"id":"6925f2f43ceb0080656e2327","level":"info","message":"Fetching product by ID","timestamp":"2025-11-25 23:48:28"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:18:28 +0000] \"GET /offerzone/products/6925f2f43ceb0080656e2327 HTTP/1.1\" 200 314 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:48:28"}
+{"body":{"area":"Test Area","brand":"Test Brand","category":"Electronics","city":"Test City","description":"Test Description","name":"Test Product","price":100},"level":"info","message":"Creating new product","timestamp":"2025-11-25 23:49:17","user":"6925f32530ea4ae161813795"}
+{"level":"info","message":"Product created successfully","productId":"6925f3253ceb0080656e232b","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"POST /offerzone/products/ HTTP/1.1\" 201 364 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"id":"6925f3253ceb0080656e232b","level":"info","message":"Fetching product by ID","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"GET /offerzone/products/6925f3253ceb0080656e232b HTTP/1.1\" 200 314 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"id":"6925f3253ceb0080656e232b","level":"info","message":"Fetching product by ID","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"GET /offerzone/products/6925f3253ceb0080656e232b HTTP/1.1\" 200 314 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"id":"6925f3253ceb0080656e232b","level":"info","message":"Fetching product by ID","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"GET /offerzone/products/6925f3253ceb0080656e232b HTTP/1.1\" 200 314 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"body":{"area":"Manhattan","brand":"Apple","category":"Electronics","city":"New York","description":"Latest Apple iPhone","name":"iPhone 15","price":999},"level":"info","message":"Creating new product","timestamp":"2025-11-25 23:55:06","user":"6925ea3f3d73298e66bd292f"}
+{"level":"info","message":"Product created successfully","productId":"6925f4823ceb0080656e2333","timestamp":"2025-11-25 23:55:06"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:25:06 +0000] \"POST /offerzone/products/ HTTP/1.1\" 201 358 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:55:06"}
+{"level":"info","message":"Fetching all products","query":{},"timestamp":"2025-11-25 23:55:10"}
+{"filters":{},"level":"info","message":"Applied product filters","timestamp":"2025-11-25 23:55:10"}
+{"level":"info","message":"Products fetched successfully","returned":6,"timestamp":"2025-11-25 23:55:10","total":6}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:25:10 +0000] \"GET /offerzone/products/ HTTP/1.1\" 200 1949 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-11-25 23:55:10"}

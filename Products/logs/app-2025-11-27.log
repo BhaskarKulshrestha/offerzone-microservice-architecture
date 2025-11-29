@@ -1,0 +1,10 @@
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-27 23:23:35"}
+{"level":"info","message":"gRPC Server running on port 50051","timestamp":"2025-11-27 23:23:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-27 23:23:35"}
+{"level":"info","message":"::1 - - [27/Nov/2025:18:23:23 +0000] \"HEAD /graphql HTTP/1.1\" 404 147 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-27 23:53:23"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-27 23:54:44"}
+{"level":"info","message":"gRPC Server running on port 50051","timestamp":"2025-11-27 23:54:44"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-27 23:54:44"}
+{"level":"info","message":"::1 - - [27/Nov/2025:18:24:53 +0000] \"GET /graphql HTTP/1.1\" 200 1373 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-27 23:54:53"}
+{"level":"info","message":"::1 - - [27/Nov/2025:18:24:56 +0000] \"POST /graphql HTTP/1.1\" 200 28852 \"http://localhost:8000/graphql\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-27 23:54:56"}
+{"level":"info","message":"::1 - - [27/Nov/2025:18:25:10 +0000] \"POST /graphql HTTP/1.1\" 200 1481 \"http://localhost:8000/graphql?query=query+MyQuery+%7B%0A++getProducts+%7B%0A++++products+%7B%0A++++++area%0A++++++brand%0A++++++category%0A++++++city%0A++++++description%0A++++++createdAt%0A++++%7D%0A++%7D%0A%7D\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-27 23:55:10"}

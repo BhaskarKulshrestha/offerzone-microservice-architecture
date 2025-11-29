@@ -1,0 +1,199 @@
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:02:17"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:02:18"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:04:41"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:04:42"}
+{"body":{"city":"string","email":"string","name":"string","password":"string","phone":"string","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:09:06"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:09:06","userId":"6925f7ca613588a87d2963c7"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:39:06 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 382 \"http://localhost:8085/api-docs/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-26 00:09:06"}
+{"body":{"city":"string","email":"string","name":"string","password":"string","phone":"string","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:09:10"}
+{"email":"string","level":"warn","message":"Signup failed - email already exists","timestamp":"2025-11-26 00:09:10"}
+{"level":"warn","message":"Auth Error Response: User already exists with this email.","timestamp":"2025-11-26 00:09:10"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:39:10 +0000] \"POST /offerzone/users/ HTTP/1.1\" 409 66 \"http://localhost:8085/api-docs/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-26 00:09:10"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:17:17"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:17:17"}
+{"email":"string","level":"info","message":"Login attempt","timestamp":"2025-11-26 00:17:27"}
+{"level":"info","message":"Login successful","role":"retailer","timestamp":"2025-11-26 00:17:27","userId":"6925f7ca613588a87d2963c7"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:47:27 +0000] \"POST /offerzone/users/session HTTP/1.1\" 200 381 \"http://localhost:8085/api-docs/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-26 00:17:27"}
+{"body":{"city":"Test City","email":"cbtest1764096509943@example.com","name":"CB Tester","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:18:29"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:18:30","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:30 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 447 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:30"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:30","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:30 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:30"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:31","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:31 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:31"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:32","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:33 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:33"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:34","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:34 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:34"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:35","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:35 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:35"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:36","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:36 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:36"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:38","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:38 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:38"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:39","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:39 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:39"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:40","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:40 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:40"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:41","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:41 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:41"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:42","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:42 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:42"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:43","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:43 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:43"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:44","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:44 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:44"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:45","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:45 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:45"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:47","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:47 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:47"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:48","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:48 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:48"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:49","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:49 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:49"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:50","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:50 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:50"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:51","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:51 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:51"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:52","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:52 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:52"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:53","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:53 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:53"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:54","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:54 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:54"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:56","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:56 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:56"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:57","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:57 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:57"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:58","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:58 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:58"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:18:59","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:59 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:59"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:00","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:00 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:00"}
+{"body":{"city":"Test City","email":"cbtest1764096557267@example.com","name":"CB Tester","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:19:17"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:19:17","userId":"6925fa2de30171d607dc7e6f"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:17 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 447 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:17"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:19:29"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:19:29"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:19:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:19:36"}
+{"body":{"city":"Test City","email":"cbtest1764096587132@example.com","name":"CB Tester","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:19:47"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:19:47","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:47 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 447 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:47"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:47","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:47 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:47"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:48","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:48 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:48"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:49","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:49 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:49"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:50","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:50 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:50"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:51","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:52 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:52"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:53","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:53 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:53"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:19:54","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:54 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:54"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:21:44"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:21:44"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:21:47","userId":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:21:47","userId":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:21:47","userId":"6925f23463546788fa9fde94"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/users/6925fa4b918891045f7e1a16 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:21:47"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:21:47","userId":"6925ee753d73298e66bd2936"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:21:47","userId":"6925ee403d73298e66bd2933"}
+{"id":"6925ee753d73298e66bd2936","level":"warn","message":"User lookup failed - user not found","timestamp":"2025-11-26 00:21:47"}
+{"level":"warn","message":"Auth Error Response: User not found.","timestamp":"2025-11-26 00:21:47"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/users/6925ee753d73298e66bd2936 HTTP/1.1\" 404 45 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:21:47"}
+{"id":"6925ee403d73298e66bd2933","level":"warn","message":"User lookup failed - user not found","timestamp":"2025-11-26 00:21:47"}
+{"level":"warn","message":"Auth Error Response: User not found.","timestamp":"2025-11-26 00:21:47"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/users/6925ee403d73298e66bd2933 HTTP/1.1\" 404 45 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:21:47"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:21:47","userId":"6925f2f430ea4ae161813791"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:21:47","userId":"6925f32530ea4ae161813795"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/users/6925f2f430ea4ae161813791 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:21:47"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/users/6925f32530ea4ae161813795 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:21:47"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/users/6925f23463546788fa9fde94 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:21:47"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/users/6925f9fee30171d607dc7e51 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:21:47"}
+{"body":{"city":"Test City","email":"cbtest1764096726872@example.com","name":"CB Tester","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:22:06"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:22:07","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:07 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 447 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:07"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:07","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:07 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:07"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:08","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:08 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:08"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:09","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:09 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:09"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:10","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:10 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:10"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:11","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:11 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:11"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:12","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:12 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:12"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:13","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:13 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:13"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:15","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:15 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:15"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:16","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:16 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:16"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:22:17","userId":"6925fad64082f7750e78f986"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:17 +0000] \"GET /offerzone/users/6925fad64082f7750e78f986 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:17"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:33:15"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:33:15"}
+{"body":{"city":"Test City","email":"cbtest1764097403563@example.com","name":"CB Tester","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:33:23"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:33:23","userId":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:23 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 447 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:23"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:33:24","userId":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:24 +0000] \"GET /offerzone/users/6925fd7be9bc186bb7664af4 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:24"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:33:25","userId":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:25 +0000] \"GET /offerzone/users/6925fd7be9bc186bb7664af4 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:25"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:33:26","userId":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:26 +0000] \"GET /offerzone/users/6925fd7be9bc186bb7664af4 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:26"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:33:27","userId":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:27 +0000] \"GET /offerzone/users/6925fd7be9bc186bb7664af4 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:27"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:33:28","userId":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:28 +0000] \"GET /offerzone/users/6925fd7be9bc186bb7664af4 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:28"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:33:29","userId":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:29 +0000] \"GET /offerzone/users/6925fd7be9bc186bb7664af4 HTTP/1.1\" 200 242 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:29"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:36:13"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:36:13"}
+{"body":{"city":"Test City","email":"test1764097583285@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:36:23","userId":"6925fe2f066102427101dbad"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:36:23","userId":"6925fe2f066102427101dbad"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"GET /offerzone/users/6925fe2f066102427101dbad HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:36:23","userId":"6925fe2f066102427101dbad"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"GET /offerzone/users/6925fe2f066102427101dbad HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:38:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:38:58"}
+{"body":{"city":"Test City","email":"test1764097743968@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:39:04","userId":"6925fed00c20c0fe5ed81288"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:39:04","userId":"6925fed00c20c0fe5ed81288"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"GET /offerzone/users/6925fed00c20c0fe5ed81288 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"Fetching user by ID","timestamp":"2025-11-26 00:39:04","userId":"6925fed00c20c0fe5ed81288"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"GET /offerzone/users/6925fed00c20c0fe5ed81288 HTTP/1.1\" 200 240 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"email":"string","level":"info","message":"Login attempt","timestamp":"2025-11-26 00:39:57"}
+{"level":"info","message":"Login successful","role":"retailer","timestamp":"2025-11-26 00:39:57","userId":"6925f7ca613588a87d2963c7"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:57 +0000] \"POST /offerzone/users/session HTTP/1.1\" 200 381 \"http://localhost:8085/api-docs/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-26 00:39:57"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:48:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:48:35"}
+{"body":{"city":"Test City","email":"test1764098324355@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:48:44"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:48:44","userId":"69260114cb44dc4fb21b03d2"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:18:44 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:48:44"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 00:50:47"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:50:48"}
+{"body":{"city":"Test City","email":"test1764098451158@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 00:50:51"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 00:50:51","userId":"692601931c2af85ca05e1163"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:20:51 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:50:51"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 01:03:10"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 01:03:10"}
+{"body":{"city":"Test City","email":"test1764099193556@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 01:03:13"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 01:03:13","userId":"692604795f811c5acc339361"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:33:13 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:03:13"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-26 01:11:25"}
+{"level":"info","message":"gRPC Server running on port 50052","timestamp":"2025-11-26 01:11:25"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 01:11:25"}
+{"body":{"city":"Test City","email":"test1764099691640@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-26 01:11:31"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-26 01:11:31","userId":"6926066b3bcfb03d5107f9dc"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:41:31 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:11:31"}
