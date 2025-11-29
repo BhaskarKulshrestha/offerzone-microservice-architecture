@@ -685,3 +685,11 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 17:42:03"}
 {"level":"info","message":"Server started on port 8004","timestamp":"2025-11-29 17:54:57"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 17:54:58"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-29 18:24:27"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:24:27"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:24:27"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:30:58"}
+{"level":"info","message":"::1 - - [29/Nov/2025:13:01:07 +0000] \"POST /offerzone/favorites/ HTTP/1.1\" 201 256 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"::1 - - [29/Nov/2025:13:01:08 +0000] \"GET /offerzone/favorites/692aee935ff53886ee0f7fb4 HTTP/1.1\" 200 1114 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-29 18:31:08"}

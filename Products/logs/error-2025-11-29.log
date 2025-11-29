@@ -117,3 +117,4 @@
 {"error":"No address added out of total 1 resolved errors: [listen EADDRINUSE: address already in use 0.0.0.0:50051]","level":"error","message":"gRPC Server bind error","timestamp":"2025-11-29 17:17:55"}
 {"error":"No address added out of total 1 resolved errors: [listen EADDRINUSE: address already in use 0.0.0.0:50051]","level":"error","message":"gRPC Server bind error","timestamp":"2025-11-29 17:24:14"}
 {"error":"No address added out of total 1 resolved errors: [listen EADDRINUSE: address already in use 0.0.0.0:50051]","level":"error","message":"gRPC Server bind error","timestamp":"2025-11-29 17:40:59"}
+{"error":"The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","level":"error","message":"MongoDB connection error","timestamp":"2025-11-29 18:22:37"}

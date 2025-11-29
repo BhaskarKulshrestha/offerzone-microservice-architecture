@@ -237,3 +237,20 @@
 {"level":"info","message":"Server started on port 8000","timestamp":"2025-11-29 17:54:57"}
 {"level":"info","message":"gRPC Server running on port 50051","timestamp":"2025-11-29 17:54:57"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 17:54:58"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-29 18:22:37"}
+{"error":"The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","level":"error","message":"MongoDB connection error","timestamp":"2025-11-29 18:22:37"}
+{"level":"info","message":"gRPC Server running on port 50051","timestamp":"2025-11-29 18:22:37"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:22:37"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-29 18:23:45"}
+{"level":"info","message":"gRPC Server running on port 50051","timestamp":"2025-11-29 18:23:45"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:23:45"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:23:45"}
+{"level":"info","message":"Root endpoint accessed","timestamp":"2025-11-29 18:24:55"}
+{"level":"info","message":"::1 - - [29/Nov/2025:12:54:55 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-29 18:24:55"}
+{"level":"info","message":"Server started on port 8000","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"gRPC Server running on port 50051","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:30:58"}
+{"body":{"area":"Test Area","brand":"Test Brand","category":"Electronics","city":"Test City","description":"Test Description","name":"Test Product","price":100},"level":"info","message":"Creating new product","timestamp":"2025-11-29 18:31:07","user":"692aee935ff53886ee0f7fb4"}
+{"level":"info","message":"Product created successfully","productId":"692aee936b0ce9eb3c08cc61","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"::1 - - [29/Nov/2025:13:01:07 +0000] \"POST /offerzone/products/ HTTP/1.1\" 201 364 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-29 18:31:07"}

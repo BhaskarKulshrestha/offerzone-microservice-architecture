@@ -203,3 +203,14 @@
 {"level":"info","message":"Server started on port 8001","timestamp":"2025-11-29 17:54:57"}
 {"level":"info","message":"gRPC Server running on port 50052","timestamp":"2025-11-29 17:54:57"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 17:54:58"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-29 18:23:58"}
+{"level":"info","message":"gRPC Server running on port 50052","timestamp":"2025-11-29 18:23:58"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:23:58"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:23:58"}
+{"level":"info","message":"Server started on port 8001","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"gRPC Server running on port 50052","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:30:58"}
+{"body":{"city":"Test City","email":"test1764421267317@example.com","name":"Test User","password":"password123","phone":"1234567890","role":"retailer"},"level":"info","message":"Signup attempt","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"Signup successful","role":"retailer","timestamp":"2025-11-29 18:31:07","userId":"692aee935ff53886ee0f7fb4"}
+{"level":"info","message":"::1 - - [29/Nov/2025:13:01:07 +0000] \"POST /offerzone/users/ HTTP/1.1\" 201 442 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-29 18:31:07"}

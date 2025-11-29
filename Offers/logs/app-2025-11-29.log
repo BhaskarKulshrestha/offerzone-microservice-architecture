@@ -1401,3 +1401,16 @@
 {"level":"info","message":"Circuit Breaker HALF-OPEN for getProductByIdRaw","timestamp":"2025-11-29 17:42:32"}
 {"level":"info","message":"Server started on port 8002","timestamp":"2025-11-29 17:54:57"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 17:54:58"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-29 18:24:14"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:24:14"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:24:14"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to Redis","timestamp":"2025-11-29 18:30:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29 18:30:58"}
+{"level":"info","message":"Executing CreateOffer","timestamp":"2025-11-29 18:31:07","user":"692aee935ff53886ee0f7fb4"}
+{"level":"info","message":"Offer created successfully","offerId":"692aee934c5cee55b52654f7","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"::1 - - [29/Nov/2025:13:01:07 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"Executing GetOfferById","offerId":"692aee934c5cee55b52654f7","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"::1 - - [29/Nov/2025:13:01:07 +0000] \"GET /offerzone/offers/692aee934c5cee55b52654f7 HTTP/1.1\" 200 743 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"Executing GetOfferById","offerId":"692aee934c5cee55b52654f7","timestamp":"2025-11-29 18:31:07"}
+{"level":"info","message":"::1 - - [29/Nov/2025:13:01:08 +0000] \"GET /offerzone/offers/692aee934c5cee55b52654f7 HTTP/1.1\" 200 743 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-29 18:31:08"}
