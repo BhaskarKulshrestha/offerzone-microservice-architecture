@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package offers;
+
+service OfferService {
+  rpc GetOffer (OfferRequest) returns (OfferResponse);
+  rpc GetOffers (GetOffersRequest) returns (OfferListResponse);
+}
+
+message OfferRequest {
+  string id = 1;
+}
+
+message GetOffersRequest {
+  string city = 1;
+  string area = 2;
+  string product = 3;
+  string retailer = 4;
+}
+
+message OfferResponse {
+  string id = 1;
+  string product = 2;
+  string retailer = 3;
+  string title = 4;
+  string description = 5;
+  double discountPercent = 6;
+  double originalPrice = 7;
+  double offerPrice = 8;
+  string validFrom = 9;
+  string validTill = 10;
+  string city = 11;
+  string area = 12;
+  bool isPremium = 13;
+}
+
+message OfferListResponse {
+  repeated OfferResponse offers = 1;
+}
