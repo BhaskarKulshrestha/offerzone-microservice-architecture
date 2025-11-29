@@ -1,0 +1,1 @@
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50051. Resolution note: ","level":"error","message":"gRPC GetProduct Failed: 69260479e4fbf6f689aa1bae","timestamp":"2025-11-26 01:03:13"}

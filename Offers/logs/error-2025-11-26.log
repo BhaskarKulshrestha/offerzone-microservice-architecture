@@ -1,0 +1,6 @@
+{"level":"error","message":"Axios Request Failed: http://localhost:8001/offerzone/users/6925ee753d73298e66bd2936 Request failed with status code 404","timestamp":"2025-11-26 00:21:47"}
+{"level":"error","message":"Axios Request Failed: http://localhost:8001/offerzone/users/6925ee403d73298e66bd2933 Request failed with status code 404","timestamp":"2025-11-26 00:21:47"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50051. Resolution note: ","level":"error","message":"gRPC GetProduct Failed: 69260479e4fbf6f689aa1bae","timestamp":"2025-11-26 01:03:13"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50052. Resolution note: ","level":"error","message":"gRPC GetUser Failed: 692604795f811c5acc339361","timestamp":"2025-11-26 01:03:13"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50051. Resolution note: ","level":"error","message":"gRPC GetProduct Failed: 69260479e4fbf6f689aa1bae","timestamp":"2025-11-26 01:03:14"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50052. Resolution note: ","level":"error","message":"gRPC GetUser Failed: 692604795f811c5acc339361","timestamp":"2025-11-26 01:03:14"}

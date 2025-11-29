@@ -1,0 +1,35 @@
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:02:17"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:02:18"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:04:41"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:04:42"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:17:17"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:17:17"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:19:29"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:19:29"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:19:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:19:36"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:21:44"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:21:44"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:33:15"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:33:15"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:36:13"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:36:13"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"POST /offerzone/favorites/ HTTP/1.1\" 201 256 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"GET /offerzone/favorites/6925fe2f066102427101dbad HTTP/1.1\" 200 1351 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:38:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:38:58"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"POST /offerzone/favorites/ HTTP/1.1\" 201 256 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"GET /offerzone/favorites/6925fed00c20c0fe5ed81288 HTTP/1.1\" 200 1351 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:48:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:48:35"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 00:50:47"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:50:47"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 01:03:10"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 01:03:10"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:33:13 +0000] \"POST /offerzone/favorites/ HTTP/1.1\" 201 256 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:03:13"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50051. Resolution note: ","level":"error","message":"gRPC GetProduct Failed: 69260479e4fbf6f689aa1bae","timestamp":"2025-11-26 01:03:13"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:33:14 +0000] \"GET /offerzone/favorites/692604795f811c5acc339361 HTTP/1.1\" 200 573 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:03:14"}
+{"level":"info","message":"Server started on port 8004","timestamp":"2025-11-26 01:11:25"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 01:11:25"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:41:32 +0000] \"POST /offerzone/favorites/ HTTP/1.1\" 201 256 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:11:32"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:41:32 +0000] \"GET /offerzone/favorites/6926066b3bcfb03d5107f9dc HTTP/1.1\" 200 1114 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:11:32"}

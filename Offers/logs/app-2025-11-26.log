@@ -1,0 +1,177 @@
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:02:18"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:02:18"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:04:41"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:04:42"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:17:17"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:17:17"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925f9fe56f90ed3fccd0a33","title":"CB Test Offer","validFrom":"2025-11-25T18:48:30.141Z","validTill":"2025-11-26T18:48:30.141Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-26 00:18:30","user":"6925f9fee30171d607dc7e51"}
+{"level":"info","message":"Offer created successfully","offerId":"6925f9fef7e3cda519fd415c","timestamp":"2025-11-26 00:18:30"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:30 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 461 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:30"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:30"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:30 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:30"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:31"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:31 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:31"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:32"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:33 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:33"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:34"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:34 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:34"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:35"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:35 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:35"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:36"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:36 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:36"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:37"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:38 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:38"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:39"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:39 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:39"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:40"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:40 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:40"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:41"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:41 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:41"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:42"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:42 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:42"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:43"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:43 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:43"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:44"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:44 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:44"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:45"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:45 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:45"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:46"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:47 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:47"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:48"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:48 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:48"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:49"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:49 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:49"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:50"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:50 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:50"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:51 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:51"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:52"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:52 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:52"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:53"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:53 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:53"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:54"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:54 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:54"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:55"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:56 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:56"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:57"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:57 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:57"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:58"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:58 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:58"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:18:59"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:48:59 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:18:59"}
+{"id":"6925f9fef7e3cda519fd415c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:00"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:00 +0000] \"GET /offerzone/offers/6925f9fef7e3cda519fd415c HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:00"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:19:29"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:19:29"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:19:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:19:36"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925fa4bbffc01a4c7a2288f","title":"CB Test Offer","validFrom":"2025-11-25T18:49:47.344Z","validTill":"2025-11-26T18:49:47.344Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-26 00:19:47","user":"6925fa4b918891045f7e1a16"}
+{"level":"info","message":"Offer created successfully","offerId":"6925fa4b4e44b271d73093cc","timestamp":"2025-11-26 00:19:47"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:47 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 461 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:47"}
+{"id":"6925fa4b4e44b271d73093cc","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:47"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:47 +0000] \"GET /offerzone/offers/6925fa4b4e44b271d73093cc HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:47"}
+{"id":"6925fa4b4e44b271d73093cc","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:48"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:48 +0000] \"GET /offerzone/offers/6925fa4b4e44b271d73093cc HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:48"}
+{"id":"6925fa4b4e44b271d73093cc","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:49"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:49 +0000] \"GET /offerzone/offers/6925fa4b4e44b271d73093cc HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:49"}
+{"id":"6925fa4b4e44b271d73093cc","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:50"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:50 +0000] \"GET /offerzone/offers/6925fa4b4e44b271d73093cc HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:50"}
+{"id":"6925fa4b4e44b271d73093cc","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:52 +0000] \"GET /offerzone/offers/6925fa4b4e44b271d73093cc HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:52"}
+{"id":"6925fa4b4e44b271d73093cc","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:53"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:53 +0000] \"GET /offerzone/offers/6925fa4b4e44b271d73093cc HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:53"}
+{"id":"6925fa4b4e44b271d73093cc","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:19:54"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:49:54 +0000] \"GET /offerzone/offers/6925fa4b4e44b271d73093cc HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:19:54"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:21:44"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:21:44"}
+{"level":"info","message":"Fetching all offers","query":{"limit":"10","page":"1","sort":"-createdAt"},"timestamp":"2025-11-26 00:21:47"}
+{"level":"error","message":"Axios Request Failed: http://localhost:8001/offerzone/users/6925ee753d73298e66bd2936 Request failed with status code 404","timestamp":"2025-11-26 00:21:47"}
+{"level":"warn","message":"Circuit Breaker Fallback triggered for User Service","timestamp":"2025-11-26 00:21:47"}
+{"level":"error","message":"Axios Request Failed: http://localhost:8001/offerzone/users/6925ee403d73298e66bd2933 Request failed with status code 404","timestamp":"2025-11-26 00:21:47"}
+{"level":"warn","message":"Circuit Breaker Fallback triggered for User Service","timestamp":"2025-11-26 00:21:47"}
+{"filters":{},"level":"info","message":"Offers fetched successfully","returned":7,"timestamp":"2025-11-26 00:21:47","total":7}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:51:47 +0000] \"GET /offerzone/offers/?page=1&limit=10&sort=-createdAt HTTP/1.1\" 200 5706 \"http://localhost:8085/api-docs/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","timestamp":"2025-11-26 00:21:47"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925fad7550015308adf93aa","title":"CB Test Offer","validFrom":"2025-11-25T18:52:07.064Z","validTill":"2025-11-26T18:52:07.064Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-26 00:22:07","user":"6925fad64082f7750e78f986"}
+{"level":"info","message":"Offer created successfully","offerId":"6925fad7c59c7dd65b7812e7","timestamp":"2025-11-26 00:22:07"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:07 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 461 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:07"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:07"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:07 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:07"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:08"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:08 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:08"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:09"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:09 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:09"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:10"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:10 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:10"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:11"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:11 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:11"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:12"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:12 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:12"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:13"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:13 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:13"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:14"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:15 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:15"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:16 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:16"}
+{"id":"6925fad7c59c7dd65b7812e7","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:22:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:52:17 +0000] \"GET /offerzone/offers/6925fad7c59c7dd65b7812e7 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:22:17"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:33:15"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:33:15"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925fd7b783397118bd891af","title":"CB Test Offer","validFrom":"2025-11-25T19:03:23.931Z","validTill":"2025-11-26T19:03:23.931Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-26 00:33:23","user":"6925fd7be9bc186bb7664af4"}
+{"level":"info","message":"Offer created successfully","offerId":"6925fd7bb0854a6f9c4e79a6","timestamp":"2025-11-26 00:33:23"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:23 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 461 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:23"}
+{"id":"6925fd7bb0854a6f9c4e79a6","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:33:23"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:24 +0000] \"GET /offerzone/offers/6925fd7bb0854a6f9c4e79a6 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:24"}
+{"id":"6925fd7bb0854a6f9c4e79a6","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:33:25"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:25 +0000] \"GET /offerzone/offers/6925fd7bb0854a6f9c4e79a6 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:25"}
+{"id":"6925fd7bb0854a6f9c4e79a6","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:33:26"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:26 +0000] \"GET /offerzone/offers/6925fd7bb0854a6f9c4e79a6 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:26"}
+{"id":"6925fd7bb0854a6f9c4e79a6","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:33:27"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:27 +0000] \"GET /offerzone/offers/6925fd7bb0854a6f9c4e79a6 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:27"}
+{"id":"6925fd7bb0854a6f9c4e79a6","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:33:28"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:28 +0000] \"GET /offerzone/offers/6925fd7bb0854a6f9c4e79a6 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:28"}
+{"id":"6925fd7bb0854a6f9c4e79a6","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:33:29"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:03:29 +0000] \"GET /offerzone/offers/6925fd7bb0854a6f9c4e79a6 HTTP/1.1\" 200 891 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:33:29"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:36:13"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:36:13"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925fe2fec1c0c0d0f6747bc","title":"Test Offer","validFrom":"2025-11-25T19:06:23.508Z","validTill":"2025-11-26T19:06:23.508Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-26 00:36:23","user":"6925fe2f066102427101dbad"}
+{"level":"info","message":"Offer created successfully","offerId":"6925fe2f386e76a84723dd13","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"id":"6925fe2f386e76a84723dd13","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"GET /offerzone/offers/6925fe2f386e76a84723dd13 HTTP/1.1\" 200 883 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"id":"6925fe2f386e76a84723dd13","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:06:23 +0000] \"GET /offerzone/offers/6925fe2f386e76a84723dd13 HTTP/1.1\" 200 883 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:36:23"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:38:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:38:58"}
+{"level":"info","message":"Executing CreateOfferCommand","timestamp":"2025-11-26 00:39:04","user":"6925fed00c20c0fe5ed81288"}
+{"level":"info","message":"Offer created successfully","offerId":"6925fed00e24c42a461a5501","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"Executing GetOfferByIdQuery","offerId":"6925fed00e24c42a461a5501","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"GET /offerzone/offers/6925fed00e24c42a461a5501 HTTP/1.1\" 200 883 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"Executing GetOfferByIdQuery","offerId":"6925fed00e24c42a461a5501","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:09:04 +0000] \"GET /offerzone/offers/6925fed00e24c42a461a5501 HTTP/1.1\" 200 883 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 00:39:04"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:48:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:48:35"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 00:50:47"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 00:50:48"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 01:03:10"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 01:03:10"}
+{"level":"info","message":"Executing CreateOfferCommand","timestamp":"2025-11-26 01:03:13","user":"692604795f811c5acc339361"}
+{"level":"info","message":"Offer created successfully","offerId":"69260479c23a7120dc1a5c7f","timestamp":"2025-11-26 01:03:13"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:33:13 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:03:13"}
+{"level":"info","message":"Executing GetOfferByIdQuery","offerId":"69260479c23a7120dc1a5c7f","timestamp":"2025-11-26 01:03:13"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50051. Resolution note: ","level":"error","message":"gRPC GetProduct Failed: 69260479e4fbf6f689aa1bae","timestamp":"2025-11-26 01:03:13"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50052. Resolution note: ","level":"error","message":"gRPC GetUser Failed: 692604795f811c5acc339361","timestamp":"2025-11-26 01:03:13"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:33:13 +0000] \"GET /offerzone/offers/69260479c23a7120dc1a5c7f HTTP/1.1\" 200 388 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:03:13"}
+{"level":"info","message":"Executing GetOfferByIdQuery","offerId":"69260479c23a7120dc1a5c7f","timestamp":"2025-11-26 01:03:13"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50051. Resolution note: ","level":"error","message":"gRPC GetProduct Failed: 69260479e4fbf6f689aa1bae","timestamp":"2025-11-26 01:03:14"}
+{"error":"14 UNAVAILABLE: No connection established. Last error: Error: connect ECONNREFUSED 127.0.0.1:50052. Resolution note: ","level":"error","message":"gRPC GetUser Failed: 692604795f811c5acc339361","timestamp":"2025-11-26 01:03:14"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:33:14 +0000] \"GET /offerzone/offers/69260479c23a7120dc1a5c7f HTTP/1.1\" 200 388 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:03:14"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-26 01:11:25"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-26 01:11:25"}
+{"level":"info","message":"Executing CreateOfferCommand","timestamp":"2025-11-26 01:11:31","user":"6926066b3bcfb03d5107f9dc"}
+{"level":"info","message":"Offer created successfully","offerId":"6926066b275d682d766e296f","timestamp":"2025-11-26 01:11:31"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:41:31 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:11:31"}
+{"level":"info","message":"Executing GetOfferByIdQuery","offerId":"6926066b275d682d766e296f","timestamp":"2025-11-26 01:11:31"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:41:32 +0000] \"GET /offerzone/offers/6926066b275d682d766e296f HTTP/1.1\" 200 743 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:11:32"}
+{"level":"info","message":"Executing GetOfferByIdQuery","offerId":"6926066b275d682d766e296f","timestamp":"2025-11-26 01:11:32"}
+{"level":"info","message":"::1 - - [25/Nov/2025:19:41:32 +0000] \"GET /offerzone/offers/6926066b275d682d766e296f HTTP/1.1\" 200 743 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-26 01:11:32"}

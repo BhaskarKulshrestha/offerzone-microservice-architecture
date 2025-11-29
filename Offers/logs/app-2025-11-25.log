@@ -1,0 +1,78 @@
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 22:44:51"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 22:44:52"}
+{"level":"info","message":"Fetching all offers","query":{},"timestamp":"2025-11-25 23:05:41"}
+{"filters":{},"level":"info","message":"Offers fetched successfully","returned":9,"timestamp":"2025-11-25 23:05:41","total":9}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:35:41 +0000] \"GET /offerzone/offers/ HTTP/1.1\" 200 4993 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:05:41"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:07:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:07:58"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:08:11"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:08:12"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:09:18"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:18"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:22:15"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:22:16"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:24:40"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:24:41"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:24:45"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:24:46"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:25:05"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:25:06"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:25:32"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:25:32"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:25:43"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:25:43"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:25:45"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:25:46"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:26:07"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:26:08"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:26:38"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:26:38"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:26:44"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:26:44"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:28:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:28:04"}
+{"body":{"area":"Koramangala","city":"Bengaluru","discountPercent":10,"isPremium":false,"offerPrice":900,"originalPrice":1000,"product":"6925ee40680cee22e2c8b406","title":"Test Offer","validFrom":"2025-11-25T17:58:24.591Z","validTill":"2025-11-26T17:58:24.592Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-25 23:28:24","user":"6925ee403d73298e66bd2933"}
+{"level":"info","message":"Offer created successfully","offerId":"6925ee40e7f894f43991552c","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:58:24 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 462 \"-\" \"node\"","timestamp":"2025-11-25 23:28:24"}
+{"id":"6925ee40e7f894f43991552c","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-25 23:28:24"}
+{"error":"Request failed with status code 404","level":"error","message":"Failed to fetch details","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:58:24 +0000] \"GET /offerzone/offers/6925ee40e7f894f43991552c HTTP/1.1\" 200 436 \"-\" \"node\"","timestamp":"2025-11-25 23:28:24"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:28:51"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:28:51"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:29:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:29:05"}
+{"body":{"area":"Koramangala","city":"Bengaluru","discountPercent":10,"isPremium":false,"offerPrice":900,"originalPrice":1000,"product":"6925ee75680cee22e2c8b409","title":"Test Offer","validFrom":"2025-11-25T17:59:17.321Z","validTill":"2025-11-26T17:59:17.322Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-25 23:29:17","user":"6925ee753d73298e66bd2936"}
+{"level":"info","message":"Offer created successfully","offerId":"6925ee7518b4cbd485171479","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:59:17 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 462 \"-\" \"node\"","timestamp":"2025-11-25 23:29:17"}
+{"id":"6925ee7518b4cbd485171479","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"Fetching details for offer","productId":"6925ee75680cee22e2c8b409","productUrl":"http://localhost:8001/offerzone/products/batch","retailerId":"6925ee753d73298e66bd2936","timestamp":"2025-11-25 23:29:17","userUrl":"http://localhost:8000/offerzone/users/batch"}
+{"error":"Request failed with status code 404","level":"error","message":"Failed to fetch details","stack":"AxiosError: Request failed with status code 404\n    at settle (/Users/I528996/Desktop/offerzone-microservice-architecture/Offers/node_modules/axios/dist/node/axios.cjs:2106:12)\n    at IncomingMessage.handleStreamEnd (/Users/I528996/Desktop/offerzone-microservice-architecture/Offers/node_modules/axios/dist/node/axios.cjs:3491:11)\n    at IncomingMessage.emit (node:events:531:35)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/I528996/Desktop/offerzone-microservice-architecture/Offers/node_modules/axios/dist/node/axios.cjs:4731:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 1)\n    at async exports.getOfferById (/Users/I528996/Desktop/offerzone-microservice-architecture/Offers/controller/Offers.js:217:37)","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:59:17 +0000] \"GET /offerzone/offers/6925ee7518b4cbd485171479 HTTP/1.1\" 200 436 \"-\" \"node\"","timestamp":"2025-11-25 23:29:17"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:30:09"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:30:10"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:44:43"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:44:44"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925f23445bb3819b5a1aedd","title":"Test Offer","validFrom":"2025-11-25T18:15:16.783Z","validTill":"2025-11-26T18:15:16.783Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-25 23:45:16","user":"6925f23463546788fa9fde94"}
+{"level":"info","message":"Offer created successfully","offerId":"6925f23452be182476dc9de6","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:15:16 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:45:16"}
+{"id":"6925f23452be182476dc9de6","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-25 23:45:16"}
+{"error":"Request failed with status code 404","level":"error","message":"Failed to fetch user 6925f23463546788fa9fde94","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:15:16 +0000] \"GET /offerzone/offers/6925f23452be182476dc9de6 HTTP/1.1\" 200 671 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:45:16"}
+{"level":"info","message":"Server started on port 8002","timestamp":"2025-11-25 23:48:14"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:48:15"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925f2f43ceb0080656e2327","title":"Test Offer","validFrom":"2025-11-25T18:18:28.320Z","validTill":"2025-11-26T18:18:28.320Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-25 23:48:28","user":"6925f2f430ea4ae161813791"}
+{"level":"info","message":"Offer created successfully","offerId":"6925f2f43cd86230dca57f52","timestamp":"2025-11-25 23:48:28"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:18:28 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:48:28"}
+{"id":"6925f2f43cd86230dca57f52","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-25 23:48:28"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:18:28 +0000] \"GET /offerzone/offers/6925f2f43cd86230dca57f52 HTTP/1.1\" 200 883 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:48:28"}
+{"body":{"area":"Test Area","city":"Test City","discountPercent":10,"offerPrice":90,"originalPrice":100,"product":"6925f3253ceb0080656e232b","title":"Test Offer","validFrom":"2025-11-25T18:19:17.193Z","validTill":"2025-11-26T18:19:17.193Z"},"level":"info","message":"Creating a new offer","timestamp":"2025-11-25 23:49:17","user":"6925f32530ea4ae161813795"}
+{"level":"info","message":"Offer created successfully","offerId":"6925f3253cd86230dca57f55","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"POST /offerzone/offers/ HTTP/1.1\" 201 458 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"id":"6925f3253cd86230dca57f55","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"GET /offerzone/offers/6925f3253cd86230dca57f55 HTTP/1.1\" 200 883 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}
+{"id":"6925f3253cd86230dca57f55","level":"info","message":"Fetching offer by ID","timestamp":"2025-11-25 23:49:17"}
+{"level":"info","message":"::1 - - [25/Nov/2025:18:19:17 +0000] \"GET /offerzone/offers/6925f3253cd86230dca57f55 HTTP/1.1\" 200 883 \"-\" \"axios/1.13.2\"","timestamp":"2025-11-25 23:49:17"}

@@ -1,0 +1,29 @@
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 22:44:51"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 22:44:51"}
+{"level":"info","message":"::1 - - [25/Nov/2025:17:35:42 +0000] \"GET /offerzone/notifications/testuser HTTP/1.1\" 500 176 \"-\" \"curl/8.7.1\"","timestamp":"2025-11-25 23:05:42"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:07:59"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:08:00"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:08:11"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:08:12"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:09:18"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:19"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:09:23"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:22:16"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:22:17"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:27:07"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:27:07"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:27:10"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:27:11"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:28:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:28:04"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:29:04"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:29:05"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:30:09"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:30:10"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:31:50"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:44:43"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:44:44"}
+{"level":"info","message":"Server started on port 8003","timestamp":"2025-11-25 23:48:14"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-25 23:48:15"}

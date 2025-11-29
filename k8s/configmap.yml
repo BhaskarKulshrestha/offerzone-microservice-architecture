@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  # Service URLs
+  PRODUCTS_SERVICE_URL: "http://products:8000"
+  USER_SERVICE_URL: "http://user:8001"
+  OFFERS_SERVICE_URL: "http://offers:8002"
+  NOTIFICATIONS_SERVICE_URL: "http://notifications:8003"
+  FAVORITES_SERVICE_URL: "http://favorites:8004"
+  
+  # gRPC URLs
+  PRODUCT_GRPC_URL: "products:50051"
+  USER_GRPC_URL: "user:50052"
+  
+  # Infrastructure
+  REDIS_URL: "redis://redis:6379"
+  
+  # Mongo URIs
+  MONGO_URI_PRODUCTS: "mongodb://mongo:27017/products"
+  MONGO_URI_USERS: "mongodb://mongo:27017/users"
+  MONGO_URI_OFFERS: "mongodb://mongo:27017/offers"
+  MONGO_URI_NOTIFICATIONS: "mongodb://mongo:27017/notifications"
+  MONGO_URI_FAVORITES: "mongodb://mongo:27017/favorites"
