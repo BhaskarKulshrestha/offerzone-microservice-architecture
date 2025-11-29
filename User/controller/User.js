@@ -163,3 +163,27 @@ exports.getCurrentUser = async (req, res) => {
     return errorResponse(res, 500, "Error fetching user details.");
   }
 };
+
+// -----------------------------------------------------------
+// GET USER BY ID (Internal/Public)
+// -----------------------------------------------------------
+exports.getUserById = async (req, res) => {
+  try {
+    logger.info("Fetching user by ID", { userId: req.params.id });
+
+    const user = await User.findById(req.params.id).select("-password");
+
+    if (!user) {
+      logger.warn("User lookup failed - user not found", { id: req.params.id });
+      return errorResponse(res, 404, "User not found.");
+    }
+
+    res.status(200).json({ success: true, user });
+  } catch (err) {
+    logger.error("Get User By ID Error", {
+      error: err.message,
+      stack: err.stack,
+    });
+    return errorResponse(res, 500, "Error fetching user.");
+  }
+};

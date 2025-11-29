@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,9 @@
   "type": "commonjs",
   "dependencies": {
     "@graphiql/plugin-explorer": "^5.1.1",
+    "@grpc/grpc-js": "^1.14.1",
+    "@grpc/proto-loader": "^0.8.0",
+    "axios": "^1.13.2",
     "bcryptjs": "^3.0.3",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
@@ -25,6 +29,7 @@
     "mongoose": "^8.19.3",
     "morgan": "^1.10.1",
     "nodemon": "^3.1.10",
+    "opossum": "^9.0.0",
     "swagger-ui-express": "^5.0.1",
     "winston": "^3.18.3",
     "winston-daily-rotate-file": "^5.0.0",
