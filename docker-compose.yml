@@ -1,0 +1,59 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo:6
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  user-service:
+    build: ./User
+    ports:
+      - "8000:8000"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/user_db
+    depends_on:
+      - mongo
+
+  products-service:
+    build: ./Products
+    ports:
+      - "8001:8001"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/products_db
+    depends_on:
+      - mongo
+
+  offers-service:
+    build: ./Offers
+    ports:
+      - "8002:8002"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/offers_db
+    depends_on:
+      - mongo
+
+  favorites-service:
+    build: ./Favorites
+    ports:
+      - "8003:8003"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/favorites_db
+    depends_on:
+      - mongo
+
+  notifications-service:
+    build: ./Notifications
+    ports:
+      - "8004:8004"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/notifications_db
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_data:
