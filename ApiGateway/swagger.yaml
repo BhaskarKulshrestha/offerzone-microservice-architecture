@@ -1,0 +1,430 @@
+openapi: 3.0.0
+info:
+  title: OfferZone API Gateway
+  description: API Documentation for OfferZone Microservices
+  version: 1.0.0
+servers:
+  - url: http://localhost:8085/offerzone
+    description: Local API Gateway
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+paths:
+  /users/:
+    post:
+      summary: Register a new user
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                role:
+                  type: string
+                  enum: [retailer, customer]
+                phone:
+                  type: string
+                city:
+                  type: string
+      responses:
+        201:
+          description: User created successfully
+  /users/session:
+    post:
+      summary: Login
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        200:
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+  /users/{id}:
+    get:
+      summary: Get User by ID
+      tags: [Users]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: User details
+  /products:
+    post:
+      summary: Create a product
+      tags: [Products]
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                brand:
+                  type: string
+                category:
+                  type: string
+                price:
+                  type: number
+                city:
+                  type: string
+                area:
+                  type: string
+                description:
+                  type: string
+      responses:
+        201:
+          description: Product created
+    get:
+      summary: Get all products
+      tags: [Products]
+      parameters:
+        - in: query
+          name: search
+          schema:
+            type: string
+        - in: query
+          name: city
+          schema:
+            type: string
+        - in: query
+          name: area
+          schema:
+            type: string
+        - in: query
+          name: category
+          schema:
+            type: string
+        - in: query
+          name: brand
+          schema:
+            type: string
+        - in: query
+          name: minPrice
+          schema:
+            type: number
+        - in: query
+          name: maxPrice
+          schema:
+            type: number
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 10
+        - in: query
+          name: sort
+          schema:
+            type: string
+            default: -createdAt
+      responses:
+        200:
+          description: List of products
+  /offers:
+    post:
+      summary: Create an offer
+      tags: [Offers]
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                product:
+                  type: string
+                  description: Product ID
+                title:
+                  type: string
+                discountPercent:
+                  type: number
+                originalPrice:
+                  type: number
+                offerPrice:
+                  type: number
+                validFrom:
+                  type: string
+                  format: date-time
+                validTill:
+                  type: string
+                  format: date-time
+                city:
+                  type: string
+                area:
+                  type: string
+      responses:
+        201:
+          description: Offer created
+    get:
+      summary: Get all offers
+      tags: [Offers]
+      parameters:
+        - in: query
+          name: city
+          schema:
+            type: string
+        - in: query
+          name: area
+          schema:
+            type: string
+        - in: query
+          name: category
+          schema:
+            type: string
+        - in: query
+          name: brand
+          schema:
+            type: string
+        - in: query
+          name: product
+          schema:
+            type: string
+            description: Product name search
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 10
+        - in: query
+          name: sort
+          schema:
+            type: string
+            default: -createdAt
+      responses:
+        200:
+          description: List of offers
+  /offers/filter:
+    get:
+      summary: Filter offers (Advanced)
+      tags: [Offers]
+      parameters:
+        - in: query
+          name: city
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: area
+          schema:
+            type: string
+        - in: query
+          name: category
+          schema:
+            type: string
+        - in: query
+          name: brand
+          schema:
+            type: string
+        - in: query
+          name: product
+          schema:
+            type: string
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 10
+        - in: query
+          name: sort
+          schema:
+            type: string
+            default: -createdAt
+      responses:
+        200:
+          description: Filtered list of offers
+  /offers/search/{city}/{query}:
+    get:
+      summary: Search offers by product name/brand/category
+      tags: [Offers]
+      parameters:
+        - in: path
+          name: city
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: query
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: area
+          schema:
+            type: string
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 10
+        - in: query
+          name: sort
+          schema:
+            type: string
+            default: -createdAt
+      responses:
+        200:
+          description: Search results
+  /offers/{id}:
+    get:
+      summary: Get offer by ID
+      tags: [Offers]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Offer details with Product and Retailer info
+  /favorites/:
+    post:
+      summary: Add to favorites
+      tags: [Favorites]
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                productId:
+                  type: string
+                offerId:
+                  type: string
+      responses:
+        201:
+          description: Added to favorites
+  /favorites/{userId}:
+    get:
+      summary: Get favorites by User ID
+      tags: [Favorites]
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+  /notifications/:
+    post:
+      summary: Create a notification
+      tags: [Notifications]
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                message:
+                  type: string
+                type:
+                  type: string
+                  enum: [info, warning, alert]
+      responses:
+        201:
+          description: Notification created
+  /notifications/{userId}:
+    get:
+      summary: Get notifications by User ID
+      tags: [Notifications]
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: List of notifications
+  /notifications/{id}/read:
+    patch:
+      summary: Mark notification as read
+      tags: [Notifications]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Notification marked as read
+  /notifications/{id}:
+    delete:
+      summary: Delete notification
+      tags: [Notifications]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Notification deleted
